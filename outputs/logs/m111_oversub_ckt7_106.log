@@ -1,0 +1,27 @@
+
+  M67 -- RESIDUAL vs OVERSUBSCRIPTION  (Ckt7 @1.06, 30 kW requests, load 50%)
+
+  fixed granularity, sweep total requested. oversubscription = PV requested / PV solo.
+
+   total    K |  PV req  PV solo  oversub |  parallel | residual %: med    min    max
+  -----------------------------------------------------------------------------------
+     700   23 |     330      330    1.00x |      +10% |           +0.0%  +0.0  +0.0
+     900   30 |     450      450    1.00x |      +20% |           +0.0%  +0.0  +0.0
+    1300   43 |     630      630    1.00x |      +26% |           +0.0%  +0.0  +0.0
+    1700   57 |     870      795    1.09x |      +45% |           +5.6%  +3.6 +10.0
+    2100   70 |    1050      780    1.35x |      +73% |          +21.1% +16.7 +27.3
+    2500   83 |    1230      840    1.46x |      +96% |          +37.8% +28.1 +58.8
+
+================================================================================
+  Residual vs oversubscription (Ckt7, 30 kW requests):
+    oversub 1.00x (total  700 kW):   +0.0%  
+    oversub 1.00x (total  900 kW):   +0.0%  
+    oversub 1.00x (total 1300 kW):   +0.0%  
+    oversub 1.09x (total 1700 kW):   +5.6%  ###
+    oversub 1.35x (total 2100 kW):  +21.1%  ###########
+    oversub 1.46x (total 2500 kW):  +37.8%  ###################
+
+  If the residual is ~0 at oversub <= 1 and grows above it, the driver is confirmed:
+  co-study only recovers capacity once the generation track is oversubscribed.
+
+  saved -> outputs/m67_residual_oversub_ckt7.csv

@@ -1,0 +1,46 @@
+
+  M95 -- SIGMA, ROLE = BLIND
+
+  sigma < 1  : relief from the whole pool cannot cover the shortfall (informative)
+  sigma >= 1 : relief MIGHT cover it -- necessary, not sufficient, since the
+               numerator credits every opposite-sign request simultaneously
+
+
+  EPRI Ckt7 @1.06, random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        3 |     0.000    0.000     0 |     unrelievable
+     0  load        8 |     0.000    3.707     7 |       relievable
+     1   gen        2 |     0.000    0.000     0 |     unrelievable
+     1  load        8 |     0.000    3.310     6 |       relievable
+     2   gen        2 |     0.000    0.000     0 |     unrelievable
+     2  load        8 |     0.000    2.541     7 |       relievable
+     3   gen        3 |     0.000    0.000     0 |     unrelievable
+     3  load        8 |     0.000    3.707     6 |       relievable
+     4   gen        1 |     0.000    0.000     0 |     unrelievable
+     4  load        8 |     0.000    2.912     5 |       relievable
+     5   gen        2 |     0.000    0.000     0 |     unrelievable
+     5  load        8 |     0.000    3.326     5 |       relievable
+     6   gen        2 |     0.000    0.000     0 |     unrelievable
+     6  load        7 |     0.000    3.266     4 |       relievable
+     7   gen        1 |     0.000    0.000     0 |     unrelievable
+     7  load        8 |     0.000    2.124     6 |       relievable
+
+====================================================================================
+
+  SUMMARY
+
+                   blocked  median_sigma  n_ge_1  median_volt  volt_ge_1  median_therm  therm_ge_1
+cell        track                                                                                 
+ckt7_random gen         16      0.000000       0          inf         16           0.0           0
+            load        63      2.912207      46     2.912207         49           inf          46
+
+  The decisive comparison is Ckt7 against Ckt24: the two binary tests give
+  them identical verdicts and their residuals are opposite. If sigma separates
+  them, the blind negative result narrows to constraint-identity tests. If it
+  does not, it is about the single-signed information set itself.
+
+  38.4 s
+
+  saved -> outputs/m107_ckt7_mechanism_106.csv
+

@@ -1,0 +1,33 @@
+
+  M98 -- IEEE 1547 CATEGORY B VOLT/VAR ON THE CO-LOCATED CELLS
+
+  Q(V) runs inside the AC verification only; the certifier still reasons at
+  unity power factor, so every surviving set is AC-true WITH regulation.
+  Curve: +-0.44 pu of rating, deadband 0.98-1.02, saturating at 0.92/1.08.
+
+  EPRI Ckt24 @1.05, colocated placement
+    pairs tested                    : 142
+    inconclusive (base fails w/ VV) : 0
+    usable                          : 142
+      gen half feasible alone       : 42
+      load half feasible alone      : 0
+      HYPOTHESIS BROKEN             : 42 / 142
+      still strictly simultaneous   : 16 / 142
+    Q(V) iterations: median 5, non-converged 3
+
+==============================================================================
+
+  SUMMARY
+
+       pairs  inconclusive  gen_alone  load_alone  hypothesis_broken  still_simultaneous
+cell                                                                                    
+ckt24    142             0         42           0                 42                  16
+
+  Every pair that stays strictly simultaneous is one whose blocking
+  constraint its own inverter's full Category B authority cannot clear.
+  Any pair that does not is a counterexample to Proposition 1's hypothesis
+  under realistic inverter capability, and the headline must be scoped to
+  unity-power-factor requests.
+
+  saved -> outputs/m98_voltvar_ckt24_reanchored.csv
+

@@ -1,0 +1,50 @@
+
+  D1 -- SMART-DS AGAINST ITS OWN YEAR, CERTIFIED AT EVERY INTERVAL
+
+  uhs2_1247--udt10746: 1382 native loads, 3443 nodes.
+  The snapshot the paper certifies against is the NON-COINCIDENT peak: every load at
+  its own annual maximum at once, 7,022 kW. The feeder's true
+  aggregate runs 612 - 3,537 kW (median 1,400), so the snapshot overstates native load by
+  2.0x at the annual peak and 5.0x at the median.
+
+  Load absorbs export and opposes import, so that error FLATTERS the generation
+  track and PENALIZES the load track. The residual is built from both.
+
+  K=16 co-located pairs at 100 kW; constraint set starts at [27463, 28038, 16291, 17636], GLDF anchored at t=(27463, 17636).
+
+  REPLAY: certified at the snapshot, then handed to the shipped year.
+
+    seed 0: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 800 kW at 0.0% / 100.0%  [803s]
+    seed 1: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 800 kW at 0.0% / 0.0%  [627s]
+    seed 2: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 1000 kW at 0.0% / 82.6%  [532s]
+    seed 3: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 600 kW at 0.0% / 0.0%  [442s]
+    seed 4: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 200 kW at 0.0% / 0.0%  [267s]
+    seed 5: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 1200 kW at 0.0% / 0.0%  [311s]
+    seed 6: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 800 kW at 0.0% / 0.0%  [388s]
+    seed 7: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 600 kW at 0.0% / 0.0%  [322s]
+    seed 8: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 400 kW at 0.0% / 0.0%  [279s]
+    seed 9: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 200 kW at 0.0% / 0.0%  [260s]
+    seed 10: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 600 kW at 0.0% / 100.0%  [353s]
+    seed 11: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 200 kW at 0.0% / 0.0%  [255s]
+    seed 12: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 800 kW at 0.0% / 0.0%  [351s]
+    seed 13: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 1200 kW at 0.0% / 0.0%  [374s]
+    seed 14: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 1000 kW at 0.0% / 98.6%  [399s]
+    seed 15: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 400 kW at 0.0% / 44.6%  [368s]
+    seed 16: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 200 kW at 0.0% / 0.0%  [281s]
+    seed 17: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 600 kW at 0.0% / 100.0%  [347s]
+    seed 18: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 400 kW at 0.0% / 0.0%  [300s]
+    seed 19: JOINT 1600 kW rejected at 0.0% of intervals; best sequential 800 kW at 0.0% / 100.0%  [440s]
+
+  MEDIAN OVER 20 DRAWS -- share of the 35,040 intervals that reject a
+  snapshot-certified accept-set
+
+         gen_alone     0.0 %   (worst draw 100.0 %, clean in 13/20 draws)
+        load_alone     0.0 %   (worst draw 0.0 %, clean in 20/20 draws)
+      seq_genfirst     0.0 %   (worst draw 0.0 %, clean in 20/20 draws)
+     seq_loadfirst     0.0 %   (worst draw 100.0 %, clean in 13/20 draws)
+      alt_genfirst     0.0 %   (worst draw 0.0 %, clean in 20/20 draws)
+     alt_loadfirst     0.0 %   (worst draw 0.0 %, clean in 20/20 draws)
+             joint     0.0 %   (worst draw 0.0 %, clean in 20/20 draws)
+
+  saved -> outputs/d1_replay.csv
+

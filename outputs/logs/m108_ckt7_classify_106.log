@@ -1,0 +1,22 @@
+
+  BLIND CLASSIFIER VERDICTS: DOES 1.06 SPLIT THE DECISIVE PAIR?
+
+  cell                     seed |             gen blocked by            load blocked by |   strict   relief
+  ---------------------------------------------------------------------------------------------------------
+  ckt7 @1.04 (published)      0 |                    voltage   voltage+7 lines+3 trafos |  two-way  one-way
+  ckt7 @1.04 (published)      1 |                    voltage    voltage+8 lines+1 trafo |  two-way  one-way
+  ckt7 @1.04 (published)      2 |            voltage+1 trafo            voltage+8 lines |  two-way  one-way
+  ckt7 @1.06 (compliant)      0 |                    1 trafo   voltage+7 lines+3 trafos |  one-way  two-way
+  ckt7 @1.06 (compliant)      1 |                    1 trafo    voltage+8 lines+1 trafo |  one-way  two-way
+  ckt7 @1.06 (compliant)      2 |             1 line+1 trafo            voltage+8 lines |  one-way  one-way
+  ckt24 light @1.05           0 |           voltage+6 trafos       11 trafos+substation |  one-way  two-way
+  ckt24 light @1.05           1 |           voltage+4 trafos        8 trafos+substation |  one-way  two-way
+  ckt24 light @1.05           2 |           voltage+5 trafos voltage+12 trafos+substation |  two-way  two-way
+
+  verdicts by cell (strict, relief) over the three seeds:
+
+    ckt7 @1.04 (published)   [('two-way', 'one-way')]
+    ckt7 @1.06 (compliant)   [('one-way', 'one-way'), ('one-way', 'two-way')]
+    ckt24 light @1.05        [('one-way', 'two-way'), ('two-way', 'two-way')]
+
+  Ckt7@1.06 vs Ckt24: DIFFERENT -- the pair no longer receives identical verdicts

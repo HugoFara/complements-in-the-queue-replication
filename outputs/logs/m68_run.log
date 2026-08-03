@@ -1,0 +1,29 @@
+
+  M68 -- RESIDUAL vs OVERSUBSCRIPTION  (Ckt24 @1.05, 100 kW requests, load 50%)
+
+  thermal feeder, ONE-WAY coupling: load alone hosts 0, PV relieves the transformer.
+  prediction: PV-first recovers everything -> residual ~0 at every oversubscription.
+
+   total    K |  PV req  PV solo  oversub |  vs parallel | residual %: med    min    max
+  --------------------------------------------------------------------------------------
+     700    7 |     300      100    3.00x |          +0% |           +0.0%  +0.0  +0.0
+    1300   13 |     700      300    2.33x |          +0% |           +0.0%  +0.0  +0.0
+    2000   20 |    1000      400    2.50x |         +50% |           +0.0%  -0.0  +0.0
+    2800   28 |    1400      450    3.15x |         +71% |           +6.2%  -0.0 +42.9
+    3600   36 |    1800      500    3.60x |         +63% |           +4.5%  +0.0 +12.5
+    4400   44 |    2200      650    3.58x |         +57% |           +0.0%  +0.0 +22.2
+
+====================================================================================
+  Residual vs oversubscription (Ckt24, 100 kW requests):
+    oversub 3.00x (total  700 kW): residual   +0.0%  .
+    oversub 2.33x (total 1300 kW): residual   +0.0%  .
+    oversub 2.50x (total 2000 kW): residual   +0.0%  .
+    oversub 3.15x (total 2800 kW): residual   +6.2%  ###
+    oversub 3.60x (total 3600 kW): residual   +4.5%  ##
+    oversub 3.58x (total 4400 kW): residual   +0.0%  .
+
+  Ckt7 (exp95) at the SAME sweep: residual 0.0 -> +2.7 -> +14.0 -> +23.9% as oversub
+  rises. If Ckt24 stays flat at ~0, the residual's ON/OFF switch is BIDIRECTIONAL
+  coupling, not oversubscription -- oversubscription only sets the magnitude once on.
+
+  saved -> outputs/m68_residual_oversub_ckt24.csv

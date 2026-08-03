@@ -1,0 +1,74 @@
+
+  M103c -- SOLO VERSUS PAIR FEASIBILITY, HOUR BY HOUR
+
+  hours: {'min_LS_PhaseA@6539': 6539, 'min_LS_PhaseB@6539': 6539, 'min_LS_PhaseC@6539': 6539, 'min_Other_Bus_Load@6986': 6986, 'max_total@972': 972}
+
+    seed 0           min_LS_PhaseA@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 0           min_LS_PhaseB@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 0           min_LS_PhaseC@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 0      min_Other_Bus_Load@6986: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 0                max_total@972: gen alone 12/12   load alone 10/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 1           min_LS_PhaseA@6539: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 1           min_LS_PhaseB@6539: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 1           min_LS_PhaseC@6539: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 1      min_Other_Bus_Load@6986: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 1                max_total@972: gen alone 10/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 2           min_LS_PhaseA@6539: gen alone  0/12   load alone  9/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 2           min_LS_PhaseB@6539: gen alone  0/12   load alone  9/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 2           min_LS_PhaseC@6539: gen alone  0/12   load alone  9/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 2      min_Other_Bus_Load@6986: gen alone  0/12   load alone  9/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 2                max_total@972: gen alone 10/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 3           min_LS_PhaseA@6539: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 3           min_LS_PhaseB@6539: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 3           min_LS_PhaseC@6539: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 3      min_Other_Bus_Load@6986: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 3                max_total@972: gen alone  9/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 4           min_LS_PhaseA@6539: gen alone  0/12   load alone  3/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 4           min_LS_PhaseB@6539: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 4           min_LS_PhaseC@6539: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 4      min_Other_Bus_Load@6986: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 4                max_total@972: gen alone 12/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 5           min_LS_PhaseA@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 5           min_LS_PhaseB@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 5           min_LS_PhaseC@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 5      min_Other_Bus_Load@6986: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 5                max_total@972: gen alone 12/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 6           min_LS_PhaseA@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 6           min_LS_PhaseB@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 6           min_LS_PhaseC@6539: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 6      min_Other_Bus_Load@6986: gen alone  0/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 6                max_total@972: gen alone 10/12   load alone  8/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 7           min_LS_PhaseA@6539: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 7           min_LS_PhaseB@6539: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 7           min_LS_PhaseC@6539: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 7      min_Other_Bus_Load@6986: gen alone  0/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 7                max_total@972: gen alone 10/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 8           min_LS_PhaseA@6539: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 8           min_LS_PhaseB@6539: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 8           min_LS_PhaseC@6539: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 8      min_Other_Bus_Load@6986: gen alone  0/12   load alone  5/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 8                max_total@972: gen alone 11/12   load alone  6/12   PAIR 12/12   (baseline vmax 1.0371)
+    seed 9           min_LS_PhaseA@6539: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0514)
+    seed 9           min_LS_PhaseB@6539: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 9           min_LS_PhaseC@6539: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0447)
+    seed 9      min_Other_Bus_Load@6986: gen alone  0/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0467)
+    seed 9                max_total@972: gen alone 11/12   load alone  7/12   PAIR 12/12   (baseline vmax 1.0371)
+
+============================================================================================
+
+  Feasible ALONE vs feasible AS A PAIR, by hour of the shipped year
+
+                         draws  pairs  gen_alone  load_alone  pair
+hour_name                                                         
+max_total@972               10    120        107          70   120
+min_LS_PhaseA@6539          10    120          0          67   120
+min_LS_PhaseB@6539          10    120          0          69   120
+min_LS_PhaseC@6539          10    120          0          69   120
+min_Other_Bus_Load@6986     10    120          0          69   120
+
+  The snapshot the paper certifies at is the annual peak. If generation fits
+  alone there and not at light load, while the pair fits at both, then the
+  snapshot UNDERSTATES what only a joint study can seat.
+
+  saved -> outputs/m124_ckt24_solo_vs_pair.csv
+

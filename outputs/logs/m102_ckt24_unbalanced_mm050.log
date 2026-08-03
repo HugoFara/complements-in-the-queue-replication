@@ -1,0 +1,44 @@
+
+  M99 -- CKT24 SOLVED UNBALANCED, ON ITS SHIPPED OPENDSS MODEL
+
+  exp60's three exclusions recomputed natively, not carried over: the two engines
+  disagree about which elements are broken at baseline.
+
+  built in 0.5s: 7522 nodes, 4926 checked lines, 797 checked transformers
+
+  substation subxfmr (45000 kVA): 118.68%   (balanced arm: 111.06%)
+  pre-broken transformers excluded: 45   (balanced arm: 37)
+  excluded buses 340, excluded lines 296
+  candidate (bus,phase) attach points: 4056
+  baseline  vmin 0.9705  vmax 1.0395  (all nodes: 0.9396)
+            worst non-excluded line 94.72%, transformer 99.76%
+  baseline feasible: True  (violation 0.000000)
+
+  seed |    gen   load    seq  JOINT    alt |    R1%    R*% | mixed  cert% |     s
+  --------------------------------------------------------------------------------
+     0 |      0      0      0   1800      0 |  100.0  100.0 |    12  100.0 |   135
+     1 |      0      0      0   1400      0 |  100.0  100.0 |     9   96.4 |   131
+     2 |      0      0      0   1500      0 |  100.0  100.0 |    10  100.0 |   134
+     3 |    100      0    200   1400    200 |   85.7   85.7 |     8  100.0 |   135
+     4 |      0      0      0   1800      0 |  100.0  100.0 |    12  100.0 |   138
+     5 |      0      0      0   1600      0 |  100.0  100.0 |    10   93.8 |   140
+     6 |      0      0      0   1500      0 |  100.0  100.0 |    10  100.0 |   142
+     7 |      0      0      0   1500      0 |  100.0  100.0 |    10  100.0 |   143
+     8 |    100      0    200   1400   1050 |   85.7   25.0 |     4  128.6 |   119
+     9 |      0      0      0   1500      0 |  100.0  100.0 |    11  110.0 |   148
+
+==================================================================================
+
+  SUMMARY -- median over draws
+
+    joint 1500 kW   R1 100.0%   R* 100.0%   R*>0 in 10/10
+    certified share of R*: median 100.0%, min 93.8%
+
+  BALANCED arm, same cell (m82_colo_s20 / m94_certified_share):
+    R* median 61.8%, certified share median 100%
+
+  ENWL showed the balanced solve can hide the mechanism (n13f4, 48.6% -> 0.0%)
+  or manufacture it (n2f1, 0.0% -> 50.0%). This decides which happened here.
+
+  saved -> outputs/m102_ckt24_unbalanced_mm050.csv
+

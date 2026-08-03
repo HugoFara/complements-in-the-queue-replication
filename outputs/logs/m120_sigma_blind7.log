@@ -1,0 +1,346 @@
+
+  M95 -- SIGMA, ROLE = BLIND
+
+  sigma < 1  : relief from the whole pool cannot cover the shortfall (informative)
+  sigma >= 1 : relief MIGHT cover it -- necessary, not sufficient, since the
+               numerator credits every opposite-sign request simultaneously
+
+
+  EPRI Ckt7 @1.06, random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        3 |     0.000    0.000     0 |     unrelievable
+     0  load        8 |     0.000    3.707     7 |       relievable
+     1   gen        2 |     0.000    0.000     0 |     unrelievable
+     1  load        8 |     0.000    3.310     6 |       relievable
+     2   gen        2 |     0.000    0.000     0 |     unrelievable
+     2  load        8 |     0.000    2.541     7 |       relievable
+     3   gen        3 |     0.000    0.000     0 |     unrelievable
+     3  load        8 |     0.000    3.707     6 |       relievable
+     4   gen        1 |     0.000    0.000     0 |     unrelievable
+     4  load        8 |     0.000    2.912     5 |       relievable
+     5   gen        2 |     0.000    0.000     0 |     unrelievable
+     5  load        8 |     0.000    3.326     5 |       relievable
+     6   gen        2 |     0.000    0.000     0 |     unrelievable
+     6  load        7 |     0.000    3.266     4 |       relievable
+     7   gen        1 |     0.000    0.000     0 |     unrelievable
+     7  load        8 |     0.000    2.124     6 |       relievable
+     8   gen        1 |     0.000    0.000     0 |     unrelievable
+     8  load        8 |     0.000    2.928     7 |       relievable
+     9   gen        2 |     0.000    0.000     0 |     unrelievable
+     9  load        8 |     0.000    3.301     7 |       relievable
+    10   gen        2 |     0.000    0.000     0 |     unrelievable
+    10  load        8 |     0.000    3.301     5 |       relievable
+    11   gen        2 |     0.000    0.000     0 |     unrelievable
+    11  load        8 |     3.310    3.310     8 |       relievable
+    12   gen        2 |     0.000    0.000     0 |     unrelievable
+    12  load        8 |     3.301    3.301     8 |       relievable
+    13   gen        3 |     0.000    0.000     0 |     unrelievable
+    13  load        8 |     0.000    3.707     7 |       relievable
+    14   gen        3 |     0.000    0.000     0 |     unrelievable
+    14  load        8 |     0.000    3.707     6 |       relievable
+    15   gen        3 |     0.000    0.000     0 |     unrelievable
+    15  load        8 |     0.000    2.532     7 |       relievable
+    16   gen        2 |     0.000    0.000     0 |     unrelievable
+    16  load        8 |     0.000    3.301     7 |       relievable
+    17   gen        2 |     0.000    0.000     0 |     unrelievable
+    17  load        8 |     2.927    2.927     8 |       relievable
+    18   gen        3 |     0.000    0.000     0 |     unrelievable
+    18  load        8 |     3.707    3.707     8 |       relievable
+    19   gen        2 |     0.000    0.000     0 |     unrelievable
+    19  load        8 |     2.919    2.919     8 |       relievable
+
+  EPRI Ckt24 @1.05, random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        9 |     0.000    0.000     0 |     unrelievable
+     0  load       12 |     0.000    0.000     2 |       relievable
+     1   gen        8 |     0.000    0.000     0 |     unrelievable
+     1  load       12 |     0.000    0.000     4 |       relievable
+     2   gen        7 |     0.000    0.000     0 |     unrelievable
+     2  load       12 |     0.000    0.000     1 |       relievable
+     3   gen        9 |     0.000    0.000     0 |     unrelievable
+     3  load       12 |     0.000    0.000     2 |       relievable
+     4   gen        9 |     0.000    0.000     0 |     unrelievable
+     4  load       12 |     0.000    0.000     2 |       relievable
+     5   gen       10 |     0.000    0.000     0 |     unrelievable
+     5  load       12 |     0.000    0.000     0 |     unrelievable
+     6   gen        7 |     0.000    0.000     0 |     unrelievable
+     6  load       12 |     0.000    0.000     4 |       relievable
+     7   gen        8 |     0.000    0.000     0 |     unrelievable
+     7  load       12 |     0.000    0.000     1 |       relievable
+     8   gen        8 |     0.000    0.000     0 |     unrelievable
+     8  load       12 |     0.000    0.000     2 |       relievable
+     9   gen        8 |     0.000    0.000     0 |     unrelievable
+     9  load       12 |     0.000    0.000     5 |       relievable
+    10   gen        7 |     0.000    0.000     0 |     unrelievable
+    10  load       12 |     0.000    0.000     3 |       relievable
+    11   gen        6 |     0.000    0.000     0 |     unrelievable
+    11  load       12 |     0.000    0.000     3 |       relievable
+    12   gen        9 |     0.000    0.000     0 |     unrelievable
+    12  load       12 |     0.000    0.000     2 |       relievable
+    13   gen        8 |     0.000    0.000     0 |     unrelievable
+    13  load       12 |     0.000    0.000     1 |       relievable
+    14   gen        6 |     0.000    0.000     0 |     unrelievable
+    14  load       12 |     0.000    0.000     2 |       relievable
+    15   gen       10 |     0.000    0.000     0 |     unrelievable
+    15  load       12 |     0.000    0.000     3 |       relievable
+    16   gen        8 |     0.000    0.032     0 |     unrelievable
+    16  load       12 |     0.000    0.000     3 |       relievable
+    17   gen        9 |     0.000    0.000     0 |     unrelievable
+    17  load       12 |     0.000    0.000     4 |       relievable
+    18   gen        4 |     0.000    0.000     0 |     unrelievable
+    18  load       12 |     0.000    0.000     1 |       relievable
+    19   gen        6 |     0.000    0.000     0 |     unrelievable
+    19  load       12 |     0.000    0.000     4 |       relievable
+
+  EPRI Ckt24 @1.05, random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen       13 |     0.000    0.000     0 |     unrelievable
+     0  load       22 |     0.000    0.000     3 |       relievable
+     1   gen       17 |     0.000    0.000     0 |     unrelievable
+     1  load       22 |     0.000    0.000     6 |       relievable
+     2   gen       14 |     0.000    0.000     0 |     unrelievable
+     2  load       22 |     0.000    0.000     2 |       relievable
+     3   gen       17 |     0.000    0.000     0 |     unrelievable
+     3  load       22 |     0.000    0.000     5 |       relievable
+     4   gen       13 |     0.000    0.000     0 |     unrelievable
+     4  load       22 |     0.000    0.000     4 |       relievable
+     5   gen       17 |     0.000    0.000     0 |     unrelievable
+     5  load       22 |     0.000    0.000     5 |       relievable
+     6   gen       12 |     0.000    0.000     0 |     unrelievable
+     6  load       22 |     0.000    0.000     6 |       relievable
+     7   gen       15 |     0.000    0.000     0 |     unrelievable
+     7  load       22 |     0.000    0.000     3 |       relievable
+     8   gen       15 |     0.000    0.000     0 |     unrelievable
+     8  load       22 |     0.000    0.000     4 |       relievable
+     9   gen       14 |     0.000    0.000     0 |     unrelievable
+     9  load       22 |     0.000    0.000     5 |       relievable
+    10   gen       13 |     0.000    0.000     0 |     unrelievable
+    10  load       22 |     0.000    0.000     7 |       relievable
+    11   gen       14 |     0.000    0.000     0 |     unrelievable
+    11  load       22 |     0.000    0.000     3 |       relievable
+    12   gen       15 |     0.000    0.000     0 |     unrelievable
+    12  load       22 |     0.000    0.000     5 |       relievable
+    13   gen       16 |     0.000    0.000     0 |     unrelievable
+    13  load       22 |     0.000    0.000     4 |       relievable
+    14   gen       11 |     0.000    0.000     0 |     unrelievable
+    14  load       22 |     0.000    0.000     4 |       relievable
+    15   gen       16 |     0.000    0.000     0 |     unrelievable
+    15  load       22 |     0.000    0.000     4 |       relievable
+    16   gen       13 |     0.000    0.000     0 |     unrelievable
+    16  load       22 |     0.000    0.000     6 |       relievable
+    17   gen       17 |     0.000    0.000     0 |     unrelievable
+    17  load       22 |     0.000    0.000    10 |       relievable
+    18   gen       12 |     0.000    0.000     0 |     unrelievable
+    18  load       22 |     0.000    0.000     4 |       relievable
+    19   gen       13 |     0.000    0.000     0 |     unrelievable
+    19  load       22 |     0.000    0.000     6 |       relievable
+
+  ENWL n13f4 (real UK LV, EN 50160), random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        9 |     2.160    2.160     9 |       relievable
+     0  load       12 |    10.229   10.229    12 |       relievable
+     1   gen        9 |     2.002    2.002     9 |       relievable
+     1  load       12 |     8.904    8.904    12 |       relievable
+     2   gen        9 |     2.160    2.160     9 |       relievable
+     2  load       12 |     9.566    9.566    12 |       relievable
+     3   gen        9 |     2.160    2.160     9 |       relievable
+     3  load       12 |    10.891   10.891    12 |       relievable
+     4   gen        9 |     2.160    2.160     9 |       relievable
+     4  load       12 |     9.566    9.566    12 |       relievable
+     5   gen        9 |     2.160    2.160     9 |       relievable
+     5  load       12 |     9.566    9.566    12 |       relievable
+     6   gen        8 |     2.070    2.070     8 |       relievable
+     6  load       12 |     8.641    8.641    12 |       relievable
+     7   gen        9 |     2.262    2.262     9 |       relievable
+     7  load       12 |     7.579    7.579    12 |       relievable
+     8   gen        9 |     2.160    2.160     9 |       relievable
+     8  load       12 |    10.229   10.229    12 |       relievable
+     9   gen        9 |     2.160    2.160     9 |       relievable
+     9  load       12 |    10.229   10.229    12 |       relievable
+    10   gen        9 |     2.160    2.160     9 |       relievable
+    10  load       12 |    10.891   10.891    12 |       relievable
+    11   gen        9 |     2.160    2.160     9 |       relievable
+    11  load       12 |    10.229   10.229    12 |       relievable
+    12   gen        9 |     4.832    4.832     9 |       relievable
+    12  load       12 |    10.628   10.628    12 |       relievable
+    13   gen        9 |     2.160    2.160     9 |       relievable
+    13  load       12 |    10.229   10.229    12 |       relievable
+    14   gen        9 |     2.160    2.160     9 |       relievable
+    14  load       12 |    10.891   10.891    12 |       relievable
+    15   gen        9 |     2.160    2.160     9 |       relievable
+    15  load       12 |    10.229   10.229    12 |       relievable
+    16   gen        9 |     2.160    2.160     9 |       relievable
+    16  load       12 |    10.229   10.229    12 |       relievable
+    17   gen        9 |     2.160    2.160     9 |       relievable
+    17  load       12 |    10.891   10.891    12 |       relievable
+    18   gen       10 |     5.298    5.298    10 |       relievable
+    18  load       12 |    11.124   11.554    12 |       relievable
+    19   gen        9 |     2.160    2.160     9 |       relievable
+    19  load       12 |    10.891   10.891    12 |       relievable
+
+  ENWL n13f4 (real UK LV, EN 50160), random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        5 |     1.555    1.555     5 |       relievable
+     0  load       12 |    10.237   10.237    12 |       relievable
+     1   gen        4 |     1.147    1.147     4 |       relievable
+     1  load       12 |     8.911    8.911    12 |       relievable
+     2   gen        5 |     1.555    1.555     5 |       relievable
+     2  load       12 |     9.574    9.574    12 |       relievable
+     3   gen        6 |     1.883    1.883     6 |       relievable
+     3  load       12 |    10.900   10.900    12 |       relievable
+     4   gen        5 |     1.399    1.399     5 |       relievable
+     4  load       12 |     9.574    9.574    12 |       relievable
+     5   gen        5 |     1.555    1.555     5 |       relievable
+     5  load       12 |     9.574    9.574    12 |       relievable
+     6   gen        4 |     1.497    1.497     4 |       relievable
+     6  load       12 |     8.647    8.647    12 |       relievable
+     7   gen        3 |     1.034    1.034     3 |       relievable
+     7  load       12 |     7.585    7.585    12 |       relievable
+     8   gen        5 |     1.555    1.555     5 |       relievable
+     8  load       12 |    10.237   10.237    12 |       relievable
+     9   gen        5 |     1.555    1.555     5 |       relievable
+     9  load       12 |    10.237   10.237    12 |       relievable
+    10   gen        6 |     1.540    1.540     6 |       relievable
+    10  load       12 |    10.900   10.900    12 |       relievable
+    11   gen        5 |     1.555    1.555     5 |       relievable
+    11  load       12 |    10.237   10.237    12 |       relievable
+    12   gen        6 |     2.066    2.066     6 |       relievable
+    12  load       12 |    10.636   10.636    12 |       relievable
+    13   gen        5 |     1.555    1.555     5 |       relievable
+    13  load       12 |    10.237   10.237    12 |       relievable
+    14   gen        6 |     1.883    1.883     6 |       relievable
+    14  load       12 |    10.900   10.900    12 |       relievable
+    15   gen        5 |     1.555    1.555     5 |       relievable
+    15  load       12 |    10.237   10.237    12 |       relievable
+    16   gen        5 |     1.555    1.555     5 |       relievable
+    16  load       12 |    10.237   10.237    12 |       relievable
+    17   gen        6 |     1.769    1.769     6 |       relievable
+    17  load       12 |    10.900   10.900    12 |       relievable
+    18   gen        7 |     2.207    2.223     7 |       relievable
+    18  load       12 |    11.124   11.563    12 |       relievable
+    19   gen        6 |     1.643    1.654     6 |       relievable
+    19  load       12 |    10.900   10.900    12 |       relievable
+
+  ENWL n2f1 (real UK LV, EN 50160), random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        8 |     0.000    0.000     0 |     unrelievable
+     0  load       10 |     3.330   14.673    10 |       relievable
+     1   gen        8 |     2.330    2.554     8 |       relievable
+     1  load       11 |     2.596    6.009    11 |       relievable
+     2   gen        8 |     1.955    1.955     8 |       relievable
+     2  load        8 |     3.222    9.466     8 |       relievable
+     3   gen        8 |     2.168    2.168     8 |       relievable
+     3  load        8 |     4.482    7.629     8 |       relievable
+     4   gen        8 |     0.000    0.000     0 |     unrelievable
+     4  load        6 |     3.331   16.715     6 |       relievable
+     5   gen        8 |     1.003    1.003     8 |       relievable
+     5  load        9 |     3.609    7.874     9 |       relievable
+     6   gen        8 |     1.136    1.243     8 |       relievable
+     6  load        9 |     3.297    8.066     9 |       relievable
+     7   gen        8 |     0.000    0.000     0 |     unrelievable
+     7  load        7 |     3.302    6.713     7 |       relievable
+     8   gen        8 |     0.000    1.110     4 |       relievable
+     8  load        6 |     4.507   11.568     6 |       relievable
+     9   gen        8 |     1.158    2.000     8 |       relievable
+     9  load        7 |     3.130   12.261     7 |       relievable
+    10   gen        8 |     1.685    2.744     8 |       relievable
+    10  load        7 |     3.208    9.750     7 |       relievable
+    11   gen        8 |     0.000    0.000     0 |     unrelievable
+    11  load       11 |     5.637    7.452    11 |       relievable
+    12   gen        8 |     0.000    0.000     0 |     unrelievable
+    12  load        9 |     8.554   14.380     9 |       relievable
+    13   gen        8 |     1.079    1.079     8 |       relievable
+    13  load        5 |    13.718   50.044     5 |       relievable
+    14   gen        8 |     2.412    2.412     8 |       relievable
+    14  load        8 |     4.816   12.324     8 |       relievable
+    15   gen        8 |     0.000    0.000     0 |     unrelievable
+    15  load        9 |     3.556    5.841     9 |       relievable
+    16   gen        8 |     2.160    2.160     8 |       relievable
+    16  load        7 |     7.286   15.907     7 |       relievable
+    17   gen        8 |     0.000    0.000     0 |     unrelievable
+    17  load        9 |     4.848   10.645     9 |       relievable
+    18   gen        8 |     2.783    2.783     8 |       relievable
+    18  load        8 |     3.042    8.372     8 |       relievable
+    19   gen        8 |     1.958    1.958     8 |       relievable
+    19  load        7 |     4.958   11.805     7 |       relievable
+
+  ENWL n2f1 (real UK LV, EN 50160), random placement
+  seed track  blocked | min sigma   median   >=1 |          verdict
+  -----------------------------------------------------------------
+     0   gen        3 |     1.247    1.247     3 |       relievable
+     0  load       11 |     2.758    4.548    11 |       relievable
+     1   gen        3 |     1.139    1.139     3 |       relievable
+     1  load       11 |     1.677    3.040    11 |       relievable
+     2   gen        3 |     0.396    0.655     0 |     unrelievable
+     2  load       11 |     2.474   11.803    11 |       relievable
+     3   gen        3 |     1.247    1.247     3 |       relievable
+     3  load       11 |     1.987    2.879    11 |       relievable
+     4   gen        3 |     1.239    1.239     3 |       relievable
+     4  load       11 |     3.572   11.886    11 |       relievable
+     5   gen        3 |     0.000    1.082     2 |       relievable
+     5  load       11 |     2.871    3.585    11 |       relievable
+     6   gen        3 |     1.245    1.245     3 |       relievable
+     6  load       11 |     1.853    4.386    11 |       relievable
+     7   gen        3 |     0.708    0.708     0 |     unrelievable
+     7  load       11 |     2.574   11.620    11 |       relievable
+     8   gen        3 |     0.895    0.895     0 |     unrelievable
+     8  load       11 |     3.698    4.514    11 |       relievable
+     9   gen        3 |     0.000    0.721     0 |     unrelievable
+     9  load       11 |     3.344    7.533    11 |       relievable
+    10   gen        3 |     0.000    0.000     0 |     unrelievable
+    10  load       11 |     3.074    6.780    11 |       relievable
+    11   gen        3 |     1.245    1.245     3 |       relievable
+    11  load       11 |     1.846    2.734    11 |       relievable
+    12   gen        3 |     1.247    1.247     3 |       relievable
+    12  load       11 |     2.986    3.429    11 |       relievable
+    13   gen        3 |     0.552    0.552     0 |     unrelievable
+    13  load       11 |    11.795   11.795    11 |       relievable
+    14   gen        3 |     1.243    1.243     3 |       relievable
+    14  load       11 |     2.323    4.381    11 |       relievable
+    15   gen        3 |     1.240    1.240     3 |       relievable
+    15  load       11 |     1.588    2.257    11 |       relievable
+    16   gen        3 |     1.205    1.205     3 |       relievable
+    16  load       11 |     3.858    4.649    11 |       relievable
+    17   gen        3 |     1.246    1.246     3 |       relievable
+    17  load       11 |     4.927   11.739    11 |       relievable
+    18   gen        3 |     1.249    1.249     3 |       relievable
+    18  load       11 |     2.788    4.214    11 |       relievable
+    19   gen        3 |     1.251    1.251     3 |       relievable
+    19  load       11 |    10.501   11.859    11 |       relievable
+
+====================================================================================
+
+  SUMMARY
+
+                      blocked  median_sigma  n_ge_1  median_volt  volt_ge_1  median_therm  therm_ge_1
+cell           track                                                                                 
+ckt24_light    gen        156      0.000000       0     0.025382          0      0.000000           9
+               load       240      0.000000      49          inf        237      0.000000          49
+ckt24_oversub  gen        287      0.000000       0     0.041626          0      0.000000           0
+               load       440      0.000000      96          inf        431      0.000000          96
+ckt7_1_06      gen         43      0.000000       0          inf         43      0.000000           0
+               load       159      3.300641     132     3.300641        137           inf         132
+enwl_n13f4_100 gen        180      2.160351     180     2.160351        180      5.166652         180
+               load       240     10.228803     240    10.228803        240     37.863295         240
+enwl_n13f4_50  gen        104      1.555297     104     1.555297        104      2.160319         104
+               load       240     10.236734     240    10.236734        240           inf         240
+enwl_n2f1_100  gen        160      1.242980     100     2.376270        152      1.242980         100
+               load       161      9.971294     161    10.455434        161           inf         161
+enwl_n2f1_50   gen         60      1.239574      41     2.070282         51      1.241663          44
+               load       220      4.385856     220     4.385856        220     11.522868         220
+
+  The decisive comparison is Ckt7 against Ckt24: the two binary tests give
+  them identical verdicts and their residuals are opposite. If sigma separates
+  them, the blind negative result narrows to constraint-identity tests. If it
+  does not, it is about the single-signed information set itself.
+
+  745.0 s
+
+  saved -> outputs/m120_sigma_blind7.csv
+

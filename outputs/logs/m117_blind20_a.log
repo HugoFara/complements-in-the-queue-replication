@@ -1,0 +1,22 @@
+
+  M77 -- REGIME CLASSIFICATION FROM SINGLE-SIGNED RUNS ONLY
+
+  The prediction below is computed from the generation-only and load-only studies.
+  No joint or sequential result enters it. The measured residual is looked up after.
+
+              cell      gen aggresses       load aggresses |   strict   relief |  residual  strict?  relief?
+  ----------------------------------------------------------------------------------------------------------
+     ckt24_oversub   voltage+8 trafos 20 trafos+substation |  one-way  two-way |    2/6          NO      yes
+      enwl_n2f1_50           46 lines     voltage+46 lines |  two-way  two-way |    4/4         yes      yes
+
+================================================================================================
+  strict (both signs drive the SAME constraint to its limit): 30/40 cell-draws agree
+  relief (each sign's binding constraint is relieved by the other): 40/40 cell-draws agree
+
+  No cell falsifies the relief test on this corpus.
+
+  Note the rule predicts POSSIBILITY at cell level, not sign at draw level: a
+  two-way cell may still show a zero residual in an individual draw where no
+  complementary pair happens to be electrically close enough to help.
+
+  saved -> outputs/m117_blind20_a.csv

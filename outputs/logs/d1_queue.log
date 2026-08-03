@@ -1,0 +1,27 @@
+[14:10:48] A: starting d1_exact_snapshot
+[14:10:50] B: starting d1_replay
+[14:39:04] A: finished d1_exact_snapshot rc=0
+[14:39:04] A: starting d1_exact_year
+[16:17:51] A: finished d1_exact_year rc=0
+[16:17:51] A: starting d1_exact_shapes
+[16:19:16] B: finished d1_replay rc=0
+[16:19:16] B: starting d1_year_search
+[16:32:12] C: starting d1_exact_snapshot_mm075
+[16:49:00] C: finished d1_exact_snapshot_mm075 rc=0
+[16:49:00] C: starting d1_exact_year_mm075
+[17:23:01] A: finished d1_exact_shapes rc=0
+[17:23:01] A: starting d1_exact_banded_b00
+[17:46:34] C: finished d1_exact_year_mm075 rc=0
+[17:46:34] C: starting d1_exact_snapshot_mm050
+[18:01:52] C: finished d1_exact_snapshot_mm050 rc=0
+[18:01:52] C: starting d1_exact_year_mm050
+[18:42:24] B: finished d1_year_search rc=0
+[18:42:24] B: queue B done
+[18:42:44] A: finished d1_exact_banded_b00 rc=0
+[18:42:44] A: starting d1_exact_banded_b02
+[18:59:54] C: finished d1_exact_year_mm050 rc=0
+[18:59:54] C: queue C done
+[20:01:50] A: finished d1_exact_banded_b02 rc=0
+[20:01:50] A: starting d1_exact_banded_b05
+[20:56:56] A: finished d1_exact_banded_b05 rc=0
+[20:56:56] A: queue A done

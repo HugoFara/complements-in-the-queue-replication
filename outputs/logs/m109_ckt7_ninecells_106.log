@@ -1,0 +1,9 @@
+
+  M63 -- SEGREGATION: PARALLEL (M58) vs SEQUENTIAL vs JOINT  (Ckt7)
+
+  one fixed queue of K=17 at 100 kW; median over seeds [0, 1, 2].
+  RESIDUAL = joint - best sequential order = capacity NO study order recovers.
+
+    src  ld% |  SEG-par  SEQ-pv1  SEQ-ld1  bestSEQ   JOINT |  vs par  vs SEQ  par-safe
+  ------------------------------------------------------------------------------------
+   1.06  30% |     700     1000      700     1000    1400 |   +100%    +40%       yes

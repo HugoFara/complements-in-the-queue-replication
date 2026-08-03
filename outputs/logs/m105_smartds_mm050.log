@@ -1,0 +1,32 @@
+
+  M80 -- MULTI-ROUND ALTERNATION vs THE SINGLE-PASS RESIDUAL
+
+  Eq. (1) maxes over two single-pass block orders. A segregated utility can instead
+  re-study each track against the other's prior approvals, repeatedly, with no tariff
+  reform at all. If that fixed point recovers the residual, the paper's central noun
+  is wrong. Alternation >= single-pass sequential by construction.
+
+  SMART-DS co-located (OpenDSS-native, unbalanced), load leg x0.50   (K=16, 100 kW)
+  seed |    JOINT  bestSEQ  bestALT | resid 1-pass  resid alt  recovered | rounds  verify
+  ---------------------------------------------------------------------------------------
+     0 |     1050      900      900 |         150        150      -0.0% |      6   AC ok
+     1 |      750      750      750 |           0          0      n/a |      6   AC ok
+     2 |      900      750      750 |         150        150       0.0% |      4   AC ok
+     3 |      900      550      600 |         350        300      14.3% |      6   AC ok
+     4 |      900      150      150 |         750        750       0.0% |      4   AC ok
+     5 |     1050      900      900 |         150        150      -0.0% |      4   AC ok
+     6 |      750      600      600 |         150        150       0.0% |      4   AC ok
+     7 |      750      450      450 |         300        300      -0.0% |      4   AC ok
+     8 |      900      300      300 |         600        600       0.0% |      4   AC ok
+     9 |     1200      300      300 |         900        900       0.0% |      6   AC ok
+
+==============================================================================
+
+  SUMMARY -- residual as % of joint, single-pass (Eq. 1) vs alternating fixed point
+
+        family   n   1-pass      alt   recovered  survives   AC ok
+  ----------------------------------------------------------------
+  smartds_colocated  10    29.4%    26.7%        0.0%      9/10   10/10
+
+  saved -> outputs/m105_smartds_mm050.csv
+

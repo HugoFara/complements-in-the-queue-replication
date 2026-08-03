@@ -1,0 +1,292 @@
+
+  M90 -- THE RESIDUAL AT A SECOND SNAPSHOT
+
+  Exact enumeration, Ckt7, same requests at every native-load scale. alpha=1.0 is
+  the paper's peak-load snapshot; alpha<1 approaches minimum daytime load, the
+  conventional screening point for a generation request.
+
+  EPRI Ckt7 @1.04, native load x1:  native load 76.61 MW, baseline v [0.9199, 0.9554], max line 62%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+  EPRI Ckt7 @1.04, native load x0.3:  native load 22.98 MW, baseline v [1.0178, 1.0259], max line 18%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 300 kW over 35 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 400 kW over 15 tied accept-set(s) x 128 second-track subsets
+      gen/load track  300 / 400 kW    best sequential 1100 kW    JOINT 1300 kW
+      EXACT R1 200 kW (15.4% of joint)   R* 0.0%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 300 kW over 35 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 600 kW over 5 tied accept-set(s) x 128 second-track subsets
+      gen/load track  300 / 600 kW    best sequential 1300 kW    JOINT 1400 kW
+      EXACT R1 100 kW (7.1% of joint)   R* 0.0%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 500 kW over 10 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 400 kW over 5 tied accept-set(s) x 128 second-track subsets
+      gen/load track  500 / 400 kW    best sequential 1100 kW    JOINT 1200 kW
+      EXACT R1 100 kW (8.3% of joint)   R* 0.0%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 300 kW over 35 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 600 kW over 5 tied accept-set(s) x 128 second-track subsets
+      gen/load track  300 / 600 kW    best sequential 1300 kW    JOINT 1400 kW
+      EXACT R1 100 kW (7.1% of joint)   R* 0.0%
+
+  SUMMARY -- median over seeds
+
+   alpha  native MW   gen kW  load kW   seq kW  joint kW    R1 %    R* %
+    0.30      22.98      300      500     1200      1350     7.7     0.0
+    1.00      76.61        0        0        0         0     0.0     nan
+
+  Read against the paper's snapshot: a residual that holds at both operating
+  points is not a peak-load artifact. A generation track that GROWS as native load
+  falls would be the surprise -- less load to absorb export, not more.
+
+    alpha=0.3:  R1 positive in 4/4 draws, R* positive in 0/4
+    alpha=1:  R1 positive in 0/4 draws, R* positive in 0/4
+
+  saved -> outputs/m115_snapshot_106_sp1.04.csv
+
+
+  M90 -- THE RESIDUAL AT A SECOND SNAPSHOT
+
+  Exact enumeration, Ckt7, same requests at every native-load scale. alpha=1.0 is
+  the paper's peak-load snapshot; alpha<1 approaches minimum daytime load, the
+  conventional screening point for a generation request.
+
+  EPRI Ckt7 @1.06, native load x1:  native load 76.61 MW, baseline v [0.9439, 0.9783], max line 61%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 0 kW    best sequential 900 kW    JOINT 1100 kW
+      EXACT R1 200 kW (18.2% of joint)   R* 0.0%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 0 kW    best sequential 900 kW    JOINT 1100 kW
+      EXACT R1 200 kW (18.2% of joint)   R* 0.0%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 700 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  700 / 0 kW    best sequential 1000 kW    JOINT 1000 kW
+      EXACT R1 0 kW (0.0% of joint)   R* 0.0%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 0 kW    best sequential 900 kW    JOINT 1100 kW
+      EXACT R1 200 kW (18.2% of joint)   R* 0.0%
+  EPRI Ckt7 @1.06, native load x0.3:  native load 22.98 MW, baseline v [1.0388, 1.0466], max line 18%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 400 kW over 15 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 400 kW    best sequential 400 kW    JOINT 400 kW
+      EXACT R1 0 kW (0.0% of joint)   R* 0.0%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 600 kW over 5 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 600 kW    best sequential 600 kW    JOINT 600 kW
+      EXACT R1 0 kW (0.0% of joint)   R* 0.0%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 400 kW over 5 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 400 kW    best sequential 500 kW    JOINT 600 kW
+      EXACT R1 100 kW (16.7% of joint)   R* 0.0%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 600 kW over 5 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 600 kW    best sequential 600 kW    JOINT 600 kW
+      EXACT R1 0 kW (0.0% of joint)   R* 0.0%
+
+  SUMMARY -- median over seeds
+
+   alpha  native MW   gen kW  load kW   seq kW  joint kW    R1 %    R* %
+    0.30      22.98        0      500      550       600     0.0     0.0
+    1.00      76.61      600        0      900      1100    18.2     0.0
+
+  Read against the paper's snapshot: a residual that holds at both operating
+  points is not a peak-load artifact. A generation track that GROWS as native load
+  falls would be the surprise -- less load to absorb export, not more.
+
+    alpha=0.3:  R1 positive in 1/4 draws, R* positive in 0/4
+    alpha=1:  R1 positive in 3/4 draws, R* positive in 0/4
+
+  saved -> outputs/m115_snapshot_106_sp1.06.csv
+
+
+  M90 -- THE RESIDUAL AT A SECOND SNAPSHOT
+
+  Exact enumeration, Ckt7, same requests at every native-load scale. alpha=1.0 is
+  the paper's peak-load snapshot; alpha<1 approaches minimum daytime load, the
+  conventional screening point for a generation request.
+
+  EPRI Ckt7 @1.08, native load x1:  native load 76.61 MW, baseline v [0.9677, 1.0010], max line 59%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 20 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 300 kW    best sequential 1200 kW    JOINT 1300 kW
+      EXACT R1 100 kW (7.7% of joint)   R* 0.0%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 10 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 300 kW    best sequential 1100 kW    JOINT 1200 kW
+      EXACT R1 100 kW (8.3% of joint)   R* 0.0%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 700 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 10 tied accept-set(s) x 128 second-track subsets
+      gen/load track  700 / 300 kW    best sequential 1200 kW    JOINT 1200 kW
+      EXACT R1 0 kW (0.0% of joint)   R* 0.0%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 10 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 300 kW    best sequential 1100 kW    JOINT 1200 kW
+      EXACT R1 100 kW (8.3% of joint)   R* 0.0%
+  EPRI Ckt7 @1.08, native load x0.3:  native load 22.98 MW, baseline v [1.0596, 1.0674], max line 18%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+
+  SUMMARY -- median over seeds
+
+   alpha  native MW   gen kW  load kW   seq kW  joint kW    R1 %    R* %
+    0.30      22.98        0        0        0         0     0.0     nan
+    1.00      76.61      600      300     1150      1200     8.0     0.0
+
+  Read against the paper's snapshot: a residual that holds at both operating
+  points is not a peak-load artifact. A generation track that GROWS as native load
+  falls would be the surprise -- less load to absorb export, not more.
+
+    alpha=0.3:  R1 positive in 0/4 draws, R* positive in 0/4
+    alpha=1:  R1 positive in 3/4 draws, R* positive in 0/4
+
+  saved -> outputs/m115_snapshot_106_sp1.08.csv
+
+
+  M90 -- THE RESIDUAL AT A SECOND SNAPSHOT
+
+  Exact enumeration, Ckt7, same requests at every native-load scale. alpha=1.0 is
+  the paper's peak-load snapshot; alpha<1 approaches minimum daytime load, the
+  conventional screening point for a generation request.
+
+  EPRI Ckt7 @1.10, native load x1:  native load 76.61 MW, baseline v [0.9912, 1.0235], max line 58%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 20 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 300 kW    best sequential 1200 kW    JOINT 1300 kW
+      EXACT R1 100 kW (7.7% of joint)   R* 0.0%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 10 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 300 kW    best sequential 1100 kW    JOINT 1200 kW
+      EXACT R1 100 kW (8.3% of joint)   R* 0.0%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 700 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 10 tied accept-set(s) x 128 second-track subsets
+      gen/load track  700 / 300 kW    best sequential 1200 kW    JOINT 1200 kW
+      EXACT R1 0 kW (0.0% of joint)   R* 0.0%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 600 kW over 7 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 300 kW over 10 tied accept-set(s) x 128 second-track subsets
+      gen/load track  600 / 300 kW    best sequential 1100 kW    JOINT 1200 kW
+      EXACT R1 100 kW (8.3% of joint)   R* 0.0%
+  EPRI Ckt7 @1.10, native load x0.3:  native load 22.98 MW, baseline v [1.0805, 1.0881], max line 19%
+    seed 0:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 1:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 2:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+    seed 3:
+    K=14 (7 gen + 7 load) -> 16384 subsets
+    13104/16384 subsets (80%)                                                                seq gen-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 128 second-track subsets
+      gen/load track  0 / 0 kW    best sequential 0 kW    JOINT 0 kW
+      EXACT R1 0 kW (0.0% of joint)   R* nan%
+
+  SUMMARY -- median over seeds
+
+   alpha  native MW   gen kW  load kW   seq kW  joint kW    R1 %    R* %
+    0.30      22.98        0        0        0         0     0.0     nan
+    1.00      76.61      600      300     1150      1200     8.0     0.0
+
+  Read against the paper's snapshot: a residual that holds at both operating
+  points is not a peak-load artifact. A generation track that GROWS as native load
+  falls would be the surprise -- less load to absorb export, not more.
+
+    alpha=0.3:  R1 positive in 0/4 draws, R* positive in 0/4
+    alpha=1:  R1 positive in 3/4 draws, R* positive in 0/4
+
+  saved -> outputs/m115_snapshot_106_sp1.10.csv
+

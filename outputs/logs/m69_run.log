@@ -1,0 +1,24 @@
+
+  M69 -- SEGREGATION RESIDUAL vs REQUEST SCALE  (Ckt24 @1.05, load 50%)
+
+  total requested held ~= 3000 kW, K = total/size; monodisperse per row.
+  one-way thermal coupling: prediction is residual ~0 at every granularity.
+
+   size    K |  PV solo  oversub |  vs parallel | residual %: med    min    max
+  -----------------------------------------------------------------------------
+    30  100 |     1440    1.04x |         +85% |           -0.0%  -0.0  +2.3
+    50   60 |     1275    1.18x |         +63% |           +0.0%  +0.0  +0.0
+   100   30 |      600    2.50x |         +67% |           +5.0%  -0.0 +11.1
+   150   20 |       75    7.50x |          +0% |           +0.0%  +0.0  +0.0
+
+==============================================================================
+  The residual as a function of request scale (Ckt24):
+      30 kW : residual   -0.0%  .
+      50 kW : residual   +0.0%  .
+     100 kW : residual   +5.0%  ##
+     150 kW : residual   +0.0%  .
+
+  Ckt7 (exp94) at the same knob: +10% (fine) rising to +58% at 100 kW. Ckt24 flat at
+  ~0 confirms it: granularity AMPLIFIES the residual only where coupling is two-way.
+
+  saved -> outputs/m69_residual_scale_ckt24.csv

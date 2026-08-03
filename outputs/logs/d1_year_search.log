@@ -1,0 +1,44 @@
+
+  D1 -- SMART-DS AGAINST ITS OWN YEAR, CERTIFIED AT EVERY INTERVAL
+
+  uhs2_1247--udt10746: 1382 native loads, 3443 nodes.
+  The snapshot the paper certifies against is the NON-COINCIDENT peak: every load at
+  its own annual maximum at once, 7,022 kW. The feeder's true
+  aggregate runs 612 - 3,537 kW (median 1,400), so the snapshot overstates native load by
+  2.0x at the annual peak and 5.0x at the median.
+
+  Load absorbs export and opposes import, so that error FLATTERS the generation
+  track and PENALIZES the load track. The residual is built from both.
+
+  K=16 co-located pairs at 100 kW; constraint set starts at [27463, 28038, 16291, 17636], GLDF anchored at t=(27463, 17636).
+
+    seed 0: gen 300 load 300 seq 600 alt 600 JOINT 1600 kW | R1 62.5% R* 62.5% | 0 cuts, 4 intervals [306s]
+    seed 1: gen 400 load 400 seq 800 alt 800 JOINT 1600 kW | R1 50.0% R* 50.0% | 0 cuts, 4 intervals [310s]
+    seed 2: gen 400 load 400 seq 800 alt 800 JOINT 1600 kW | R1 50.0% R* 50.0% | 0 cuts, 4 intervals [386s]
+    seed 3: gen 300 load 300 seq 600 alt 600 JOINT 1600 kW | R1 62.5% R* 62.5% | 0 cuts, 4 intervals [460s]
+    seed 4: gen 100 load 100 seq 200 alt 200 JOINT 1600 kW | R1 87.5% R* 87.5% | 0 cuts, 4 intervals [435s]
+    seed 5: gen 600 load 600 seq 1200 alt 1200 JOINT 1600 kW | R1 25.0% R* 25.0% | 0 cuts, 4 intervals [389s]
+      cut 1: year rejects {'load_alone': 3}, worst t=17344 viol 0.00108
+    seed 6: gen 400 load 300 seq 800 alt 800 JOINT 1600 kW | R1 50.0% R* 50.0% | 1 cuts, 5 intervals [874s]
+    seed 7: gen 300 load 300 seq 600 alt 600 JOINT 1600 kW | R1 62.5% R* 62.5% | 0 cuts, 4 intervals [403s]
+    seed 8: gen 200 load 200 seq 400 alt 400 JOINT 1600 kW | R1 75.0% R* 75.0% | 0 cuts, 4 intervals [397s]
+    seed 9: gen 100 load 100 seq 200 alt 200 JOINT 1600 kW | R1 87.5% R* 87.5% | 0 cuts, 4 intervals [350s]
+    seed 10: gen 200 load 200 seq 400 alt 400 JOINT 1600 kW | R1 75.0% R* 75.0% | 0 cuts, 4 intervals [387s]
+    seed 11: gen 100 load 100 seq 200 alt 200 JOINT 1600 kW | R1 87.5% R* 87.5% | 0 cuts, 4 intervals [406s]
+    seed 12: gen 400 load 400 seq 800 alt 800 JOINT 1600 kW | R1 50.0% R* 50.0% | 0 cuts, 4 intervals [457s]
+    seed 13: gen 600 load 600 seq 1200 alt 1200 JOINT 1600 kW | R1 25.0% R* 25.0% | 0 cuts, 4 intervals [463s]
+    seed 14: gen 400 load 400 seq 800 alt 800 JOINT 1600 kW | R1 50.0% R* 50.0% | 0 cuts, 4 intervals [482s]
+    seed 15: gen 100 load 100 seq 200 alt 200 JOINT 1600 kW | R1 87.5% R* 87.5% | 0 cuts, 4 intervals [387s]
+    seed 16: gen 100 load 100 seq 200 alt 200 JOINT 1600 kW | R1 87.5% R* 87.5% | 0 cuts, 4 intervals [445s]
+    seed 17: gen 200 load 200 seq 400 alt 400 JOINT 1600 kW | R1 75.0% R* 75.0% | 0 cuts, 4 intervals [396s]
+    seed 18: gen 200 load 200 seq 400 alt 400 JOINT 1600 kW | R1 75.0% R* 75.0% | 0 cuts, 4 intervals [430s]
+    seed 19: gen 300 load 300 seq 600 alt 600 JOINT 1600 kW | R1 62.5% R* 62.5% | 0 cuts, 4 intervals [420s]
+
+  MEDIAN OVER 20 DRAWS, every number valid at all 35040 intervals
+
+         arm    gen   load    seq    alt   JOINT    R1 %    R* %   R*>0  cuts
+  ---------------------------------------------------------------------------
+       rated    300    300    600    600    1600    62.5    62.5  20/20     1
+
+  saved -> outputs/d1_year_search.csv
+

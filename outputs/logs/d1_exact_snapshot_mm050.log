@@ -1,0 +1,39 @@
+
+  D1 -- SMART-DS AGAINST ITS OWN YEAR, CERTIFIED AT EVERY INTERVAL
+
+  uhs2_1247--udt10746: 1382 native loads, 3443 nodes.
+  The snapshot the paper certifies against is the NON-COINCIDENT peak: every load at
+  its own annual maximum at once, 7,022 kW. The feeder's true
+  aggregate runs 612 - 3,537 kW (median 1,400), so the snapshot overstates native load by
+  2.0x at the annual peak and 5.0x at the median.
+
+  Load absorbs export and opposes import, so that error FLATTERS the generation
+  track and PENALIZES the load track. The residual is built from both.
+
+  K=16 co-located pairs at 100 kW (load leg x0.50); constraint set starts at [27463, 28038, 16291, 17636], GLDF anchored at t=(27463, 17636).
+
+  EXACT: all 2^16 = 65,536 subsets enumerated by AC power flow, at the paper snapshot.
+
+    seed 0: feasible 4,570/65,536 | gen 400 load 300 seq 900 alt 900 JOINT 1050 | R1 14.3% R* 14.3% | 0 cuts [165s]
+    seed 1: feasible 768/65,536 | gen 400 load 250 seq 750 alt 750 JOINT 750 | R1 0.0% R* 0.0% | 0 cuts [85s]
+    seed 2: feasible 2,048/65,536 | gen 500 load 250 seq 750 alt 750 JOINT 900 | R1 16.7% R* 16.7% | 0 cuts [80s]
+    seed 3: feasible 743/65,536 | gen 300 load 150 seq 550 alt 600 JOINT 900 | R1 38.9% R* 33.3% | 0 cuts [68s]
+    seed 4: feasible 128/65,536 | gen 100 load 50 seq 150 alt 150 JOINT 900 | R1 83.3% R* 83.3% | 0 cuts [71s]
+    seed 5: feasible 8,192/65,536 | gen 600 load 300 seq 900 alt 900 JOINT 1050 | R1 14.3% R* 14.3% | 0 cuts [111s]
+    seed 6: feasible 512/65,536 | gen 400 load 200 seq 600 alt 600 JOINT 750 | R1 20.0% R* 20.0% | 0 cuts [110s]
+    seed 7: feasible 256/65,536 | gen 300 load 150 seq 450 alt 450 JOINT 750 | R1 40.0% R* 40.0% | 0 cuts [76s]
+    seed 8: feasible 256/65,536 | gen 200 load 100 seq 300 alt 300 JOINT 900 | R1 66.7% R* 66.7% | 0 cuts [75s]
+    seed 9: feasible 768/65,536 | gen 100 load 100 seq 300 alt 300 JOINT 1200 | R1 75.0% R* 75.0% | 0 cuts [69s]
+
+  MEDIAN OVER 10 DRAWS -- exact, no optimizer anywhere
+
+    gen alone             350 kW
+    load alone            175 kW
+    best sequential       575 kW
+    best alternating      600 kW
+    JOINT                 900 kW
+    R1                   29.4 %
+    R*                   26.7 %   positive in 9/10 draws
+
+  saved -> outputs/d1_exact_snapshot_mm050.csv
+

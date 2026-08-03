@@ -1,0 +1,64 @@
+
+  M80 -- MULTI-ROUND ALTERNATION vs THE SINGLE-PASS RESIDUAL
+
+  Eq. (1) maxes over two single-pass block orders. A segregated utility can instead
+  re-study each track against the other's prior approvals, repeatedly, with no tariff
+  reform at all. If that fixed point recovers the residual, the paper's central noun
+  is wrong. Alternation >= single-pass sequential by construction.
+
+  EPRI Ckt24 @1.05, colocated placement   (K=24, 50 kW)
+  seed |    JOINT  bestSEQ  bestALT | resid 1-pass  resid alt  recovered | rounds  verify
+  ---------------------------------------------------------------------------------------
+     0 |     1200     1000     1000 |         200        200       0.0% |      6   AC ok
+     1 |     1200     1200     1200 |           0          0      n/a |      3   AC ok
+     2 |     1200     1000     1000 |         200        200       0.0% |      6   AC ok
+     3 |     1200     1000     1000 |         200        200       0.0% |      6   AC ok
+     4 |     1200     1100     1100 |         100        100       0.0% |      6   AC ok
+     5 |     1200     1200     1200 |           0          0      n/a |      3   AC ok
+     6 |     1150     1000     1000 |         150        150       0.0% |      6   AC ok
+     7 |     1200      800      900 |         400        300      25.0% |      8   AC ok
+     8 |     1200      900      900 |         300        300       0.0% |      6   AC ok
+     9 |     1200     1000     1100 |         200        100      50.0% |      8   AC ok
+
+==============================================================================
+
+  SUMMARY -- residual as % of joint, single-pass (Eq. 1) vs alternating fixed point
+
+        family   n   1-pass      alt   recovered  survives   AC ok
+  ----------------------------------------------------------------
+         ckt24  10    16.7%    14.9%        0.0%      8/10   10/10
+
+  saved -> outputs/m100_ckt24_balanced_50kw.csv
+
+
+  M80 -- MULTI-ROUND ALTERNATION vs THE SINGLE-PASS RESIDUAL
+
+  Eq. (1) maxes over two single-pass block orders. A segregated utility can instead
+  re-study each track against the other's prior approvals, repeatedly, with no tariff
+  reform at all. If that fixed point recovers the residual, the paper's central noun
+  is wrong. Alternation >= single-pass sequential by construction.
+
+  EPRI Ckt24 @1.05, colocated placement   (K=24, 25 kW)
+  seed |    JOINT  bestSEQ  bestALT | resid 1-pass  resid alt  recovered | rounds  verify
+  ---------------------------------------------------------------------------------------
+     0 |      600      550      600 |          50          0     100.0% |      5   AC ok
+     1 |      600      600      600 |           0          0      n/a |      3   AC ok
+     2 |      600      600      600 |           0          0      n/a |      3   AC ok
+     3 |      600      550      550 |          50         50       0.0% |      6   AC ok
+     4 |      600      550      550 |          50         50       0.0% |      6   AC ok
+     5 |      600      600      600 |           0          0      n/a |      3   AC ok
+     6 |      575      525      525 |          50         50       0.0% |      6   AC ok
+     7 |      600      550      550 |          50         50       0.0% |      6   AC ok
+     8 |      600      550      550 |          50         50       0.0% |      6   AC ok
+     9 |      600      550      600 |          50          0     100.0% |      5   AC ok
+
+==============================================================================
+
+  SUMMARY -- residual as % of joint, single-pass (Eq. 1) vs alternating fixed point
+
+        family   n   1-pass      alt   recovered  survives   AC ok
+  ----------------------------------------------------------------
+         ckt24  10     8.3%     4.2%        0.0%      5/10   10/10
+
+  saved -> outputs/m100_ckt24_balanced_25kw.csv
+

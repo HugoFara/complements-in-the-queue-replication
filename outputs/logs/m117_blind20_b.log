@@ -1,0 +1,43 @@
+
+  M77 -- REGIME CLASSIFICATION FROM SINGLE-SIGNED RUNS ONLY
+
+  The prediction below is computed from the generation-only and load-only studies.
+  No joint or sequential result enters it. The measured residual is looked up after.
+
+              cell      gen aggresses       load aggresses |   strict   relief |  residual  strict?  relief?
+  ----------------------------------------------------------------------------------------------------------
+       ckt24_light   voltage+6 trafos 11 trafos+substation |  one-way  two-way |    0/9         yes       NO
+    enwl_n13f4_100            voltage    voltage+129 lines |  two-way  two-way |    4/4         yes      yes
+     enwl_n13f4_50            voltage    voltage+128 lines |  two-way  two-way |    4/4         yes      yes
+
+================================================================================================
+  strict (both signs drive the SAME constraint to its limit): 57/60 cell-draws agree
+  relief (each sign's binding constraint is relieved by the other): 40/60 cell-draws agree
+
+  FALSIFICATIONS of the relief test:
+    ckt24_light seed 0: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 1: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 2: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 3: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 4: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 5: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 6: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 7: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 8: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 9: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 10: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 11: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 12: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 13: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 14: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 15: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 16: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 17: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 18: predicted two-way, residual positive in 0/9 draws
+    ckt24_light seed 19: predicted two-way, residual positive in 0/9 draws
+
+  Note the rule predicts POSSIBILITY at cell level, not sign at draw level: a
+  two-way cell may still show a zero residual in an individual draw where no
+  complementary pair happens to be electrically close enough to help.
+
+  saved -> outputs/m117_blind20_b.csv

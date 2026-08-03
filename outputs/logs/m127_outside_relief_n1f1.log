@@ -1,0 +1,211 @@
+
+  M101 -- CAN ANY APPROVAL SET OUTSIDE THE PAIR SEAT EITHER HALF?
+
+  Exhaustive over every subset of the requests outside the pair, by exact AC
+  power flow. n_seat = 0 means no segregated process reaches that half at any
+  number of rounds -- measured, not inferred from a privacy assumption.
+
+  ENWL n1f1 UNBALANCED, random placement, 50 kW, relax  (k=24, 50 kW, built in 0.1s)
+    seed 0: fixed point 650 kW, 2 mixed pairs, 1 credited (100 kW), 15s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv0+ev6 half    pv0:  8192 subsets,    16 feasible bases,      CERTIFIED  vio 3.43e-02 -> 2.45e-02  [18s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv0+ev6 half    ev6:  8192 subsets,   722 feasible bases,      CERTIFIED  vio 8.98e-02 -> 6.06e-04  [18s]
+    seed 1: fixed point 650 kW, 2 mixed pairs, 2 credited (200 kW), 10s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev9+pv18 half    ev9:  8192 subsets,   648 feasible bases,    REFUTED (1)  vio 9.65e-02 -> 0.00e+00  [19s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev9+pv18 half   pv18:  8192 subsets,    22 feasible bases,      CERTIFIED  vio 4.86e-02 -> 3.50e-02  [20s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv8+ev16 half    pv8:  8192 subsets,    20 feasible bases,      CERTIFIED  vio 4.75e-02 -> 3.62e-02  [19s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv8+ev16 half   ev16:  8192 subsets,   743 feasible bases,   REFUTED (53)  vio 7.53e-02 -> 0.00e+00  [19s]
+    seed 2: fixed point 750 kW, 3 mixed pairs, 2 credited (200 kW), 11s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv13+ev15 half   pv13:  8192 subsets,    67 feasible bases,    REFUTED (4)  vio 3.39e-02 -> 0.00e+00  [19s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv13+ev15 half   ev15:  8192 subsets,   262 feasible bases,      CERTIFIED  vio 8.02e-02 -> 2.81e-03  [20s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv3+ev14 half    pv3:  8192 subsets,    36 feasible bases,    REFUTED (7)  vio 3.09e-02 -> 0.00e+00  [19s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv3+ev14 half   ev14:  8192 subsets,   415 feasible bases,   REFUTED (46)  vio 7.20e-02 -> 0.00e+00  [20s]
+    seed 3: fixed point 600 kW, 5 mixed pairs, 3 credited (300 kW), 12s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev1+pv2 half    ev1:  8192 subsets,   112 feasible bases,      CERTIFIED  vio 1.02e-01 -> 1.29e-02  [22s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      ev1+pv2 half    pv2:  2048 subsets,     2 feasible bases,    REFUTED (2)  vio 0.00e+00 -> 0.00e+00  [5s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv12+ev20 half   pv12:  8192 subsets,    26 feasible bases,      CERTIFIED  vio 3.16e-02 -> 1.65e-02  [22s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv12+ev20 half   ev20:  8192 subsets,   402 feasible bases,      CERTIFIED  vio 9.82e-02 -> 1.30e-02  [22s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv5+ev18 half    pv5:  2048 subsets,     2 feasible bases,    REFUTED (2)  vio 0.00e+00 -> 0.00e+00  [6s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv5+ev18 half   ev18:  8192 subsets,   701 feasible bases,      CERTIFIED  vio 8.85e-02 -> 2.15e-03  [21s]
+    seed 4: fixed point 650 kW, 0 mixed pairs, 0 credited (0 kW), 9s
+    seed 5: fixed point 550 kW, 8 mixed pairs, 3 credited (300 kW), 12s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev3+pv8 half    ev3:  8192 subsets,   534 feasible bases,      CERTIFIED  vio 1.19e-01 -> 6.88e-02  [23s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev3+pv8 half    pv8:  8192 subsets,    30 feasible bases,      CERTIFIED  vio 6.87e-02 -> 5.56e-02  [23s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev6+pv15 half    ev6:  8192 subsets,   416 feasible bases,      CERTIFIED  vio 9.78e-02 -> 3.34e-02  [23s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev6+pv15 half   pv15:  8192 subsets,    34 feasible bases,    REFUTED (7)  vio 3.15e-02 -> 0.00e+00  [21s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv2+ev12 half    pv2:  2048 subsets,     4 feasible bases,    REFUTED (3)  vio 0.00e+00 -> 0.00e+00  [5s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv2+ev12 half   ev12:  8192 subsets,   225 feasible bases,   REFUTED (89)  vio 5.32e-02 -> 0.00e+00  [22s]
+    seed 6: fixed point 1000 kW, 1 mixed pairs, 1 credited (100 kW), 11s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv7+ev22 half    pv7:  8192 subsets,    17 feasible bases,      CERTIFIED  vio 5.91e-02 -> 3.48e-02  [23s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv7+ev22 half   ev22:  8192 subsets,  1241 feasible bases,   REFUTED (73)  vio 8.66e-02 -> 0.00e+00  [22s]
+    seed 7: fixed point 650 kW, 0 mixed pairs, 0 credited (0 kW), 8s
+    seed 8: fixed point 600 kW, 6 mixed pairs, 2 credited (200 kW), 10s
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev1+pv16 half    ev1:  8192 subsets,   294 feasible bases,  REFUTED (126)  vio 4.25e-02 -> 0.00e+00  [21s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      ev1+pv16 half   pv16:  2048 subsets,     3 feasible bases,      CERTIFIED  vio 6.05e-02 -> 4.04e-02  [5s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev12+pv19 half   ev12:  8192 subsets,   226 feasible bases,      CERTIFIED  vio 1.20e-01 -> 2.55e-02  [21s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      ev12+pv19 half   pv19:  8192 subsets,    24 feasible bases,      CERTIFIED  vio 1.53e-02 -> 5.03e-03  [21s]
+    seed 9: fixed point 650 kW, 0 mixed pairs, 0 credited (0 kW), 7s
+
+  GEOMETRY OF EVERY CERTIFIED MIXED PAIR
+
+                  pairs  credited  same_phase  median_hops  max_hops  median_m
+cell    same_bus                                                              
+n1f1_50 False        27        14          27         36.0       116  70.24993
+
+============================================================================================
+
+  SUMMARY
+
+         halves  pairs  subsets  feasible_bases  seated  certified  median_relief  truncated
+cell                                                                                        
+n1f1_50      28     14   204800            7244     413         16       0.038194         24
+
+  certified = halves no feasible outside base case seats. Those are
+  operator-independent by exhaustion; Proposition 1 is not needed for them.
+  seated > 0 on any half refutes the claim for its pair.
+
+                  halves  seated  median_hops  median_m
+cell    same_bus                                       
+n1f1_50 False         28     413         28.5  62.30613
+
+  saved -> outputs/m127_outside_relief_n1f1.csv
+

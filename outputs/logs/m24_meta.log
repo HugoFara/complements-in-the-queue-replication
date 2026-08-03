@@ -1,0 +1,14 @@
+M24: seed distributions -- request-draw variance (25 draws, convex) vs. skip-continue baseline
+
+  network        n bound  J>S    margin kW (mean+-sd)  median        [min,max]   mean%  Wilcoxon p       t p
+  eulv          25    20   20       7.02 +-  7.53     4.59 [  -3.2,  28.6]   2.99    5.71e-05  1.25e-04 ***  (75s)
+
+  Reading: a margin is only a real finding if it is both (a) practically
+  non-trivial and (b) significant. 'n.s.' or a mean margin inside +-sd of 0
+  should be downgraded from the headline.
+
+M24b: metaheuristic variance -- NSGA-II accommodated MW over 12 search seeds, FIXED seed-0 request set
+  eulv         skip=  236.8  convex=  245.4  nsga2=  245.3+-0.25 kW [244.6,245.4]  seed-spread=0.8 kW vs margin-over-skip=8.4 kW  (1081s)
+  If seed-spread >= margin-over-skip, the single-seed headline is inside the noise.
+
+saved outputs/m24_seed_distributions.csv

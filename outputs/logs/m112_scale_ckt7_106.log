@@ -1,0 +1,29 @@
+
+  M66 -- SEGREGATION RESIDUAL vs REQUEST SCALE  (Ckt7 @1.06, load 50%)
+
+  oversubscription held ~constant: total requested ~= 2000 kW, K = total/size.
+  monodisperse size per row; 6 seeds each; residual = joint - best order.
+
+   size    K |  joint kW size/joint |  parallel gap | residual %: med    min    max
+  ---------------------------------------------------------------------------------
+    12  167 |     2004        0.6% |     +61% (max +67) |           +9.9%  +9.2 +11.3
+    20  100 |     1990        1.0% |     +66% (max +87) |          +13.1% +11.1 +17.9
+    30   67 |     2010        1.5% |     +67% (max +83) |          +19.6% +13.6 +24.5
+    50   40 |     1925        2.6% |     +71% (max +82) |           +8.6%  +5.4 +14.3
+    75   27 |     1688        4.4% |    +119% (max+156) |          +17.9% +11.1 +35.3
+   100   20 |     1400        7.1% |     +81% (max+183) |          +20.8%  +0.0 +70.0
+
+==================================================================================
+  The residual as a function of request scale (Ckt7):
+      12 kW :   +9.9%  #####
+      20 kW :  +13.1%  #######
+      30 kW :  +19.6%  ##########
+      50 kW :   +8.6%  ####
+      75 kW :  +17.9%  #########
+     100 kW :  +20.8%  ##########
+
+  This is the magnitude-bearing statement: the segregation cost co-study recovers
+  is a function of how large each request is relative to hosting capacity, not a
+  single percentage. Residential-scale queues (M65) sit at the flat left end.
+
+  saved -> outputs/m66_residual_scale_ckt7.csv

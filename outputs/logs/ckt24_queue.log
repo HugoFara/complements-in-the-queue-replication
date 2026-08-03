@@ -1,0 +1,50 @@
+[23:59:14] starting voltvar ckt24 re-anchored
+[00:02:34] finished voltvar rc=0
+[00:02:34] starting m103_ckt24_balanced_mm075
+[00:15:21] finished m103_ckt24_balanced_mm075 rc=0
+[00:15:21] starting m103_ckt24_balanced_mm050
+[00:23:08] starting smartds voltvar end-to-end
+[00:26:55] finished m103_ckt24_balanced_mm050 rc=0
+[00:26:55] pp queue done
+[00:27:29] finished smartds voltvar end-to-end rc=0
+[00:27:29] starting m105_smartds_mm075
+[00:29:00] finished m105_smartds_mm075 rc=0
+[00:29:00] starting m105_smartds_mm050
+[00:30:48] finished m105_smartds_mm050 rc=0
+[00:30:48] smartds queue done
+[00:31:04] starting ckt24 voltvar end-to-end
+[00:36:24] starting m101_ckt24_unbalanced_50kw
+[00:38:22] starting m101_ckt24_unbalanced_50kw
+[00:48:33] finished m101_ckt24_unbalanced_50kw rc=0
+[00:48:33] starting m101_ckt24_unbalanced_25kw
+[00:56:40] finished m101_ckt24_unbalanced_25kw rc=0
+[00:56:40] starting m102_ckt24_unbalanced_mm075
+[00:59:49] finished ckt24 voltvar end-to-end rc=0
+[00:59:51] starting smartds e2e DAMPED
+[01:04:01] finished smartds e2e damped rc=0
+[01:04:01] starting m107_smartds_50kw
+[01:05:37] finished m107_smartds_50kw rc=0
+[01:05:37] starting m107_smartds_25kw
+[01:06:35] finished m107_smartds_25kw rc=0
+[01:06:35] smartds follow-ups done
+[01:06:51] starting m108_ckt24_k48_50kw (k=48, 50 kW, total 2400 kW)
+[01:17:07] finished m108_ckt24_k48_50kw rc=0
+[01:17:07] starting m108_ckt24_k96_25kw (k=96, 25 kW, total 2400 kW)
+[01:19:48] finished m102_ckt24_unbalanced_mm075 rc=0
+[01:19:48] starting m102_ckt24_unbalanced_mm050
+[01:31:08] finished m108_ckt24_k96_25kw rc=0
+[01:31:08] penetration control done
+[01:31:17] starting ckt24 e2e DAMPED
+[01:42:35] finished m102_ckt24_unbalanced_mm050 rc=0
+[01:42:35] queue done
+[01:50:50] finished ckt24 e2e damped rc=0
+[01:50:54] starting m110_smartds_k32_50kw (k=32, 50 kW, total 1600 kW)
+[01:51:01] starting m111_ckt24_unb_50kw_mm075 (50 kW gen leg, load leg x0.75)
+[01:53:03] finished m110_smartds_k32_50kw rc=0
+[01:53:03] starting m110_smartds_k64_25kw (k=64, 25 kW, total 1600 kW)
+[01:55:43] finished m110_smartds_k64_25kw rc=0
+[01:55:43] smartds penetration control done
+[01:58:37] finished m111_ckt24_unb_50kw_mm075 rc=0
+[01:58:37] starting m111_ckt24_unb_50kw_mm050 (50 kW gen leg, load leg x0.50)
+[02:04:34] finished m111_ckt24_unb_50kw_mm050 rc=0
+[02:04:34] ckt24 informative mismatch done

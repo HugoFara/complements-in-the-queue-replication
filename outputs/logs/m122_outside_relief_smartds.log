@@ -1,0 +1,579 @@
+
+  M101 -- CAN ANY APPROVAL SET OUTSIDE THE PAIR SEAT EITHER HALF?
+
+  Exhaustive over every subset of the requests outside the pair, by exact AC
+  power flow. n_seat = 0 means no segregated process reaches that half at any
+  number of rounds -- measured, not inferred from a privacy assumption.
+
+  SMART-DS co-located (OpenDSS-native, unbalanced)  (k=16, 100 kW, built in 0.1s)
+    seed 0: fixed point 800 kW, 4 mixed pairs, 4 credited (800 kW), 8s
+      pv0+ev1 half    pv0:   128 subsets,     8 feasible bases,      CERTIFIED  vio 1.37e-03 -> 9.64e-04  [1s]
+      pv0+ev1 half    ev1:   128 subsets,    16 feasible bases,      CERTIFIED  vio 3.29e-02 -> 3.21e-02  [1s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv10+ev11 half   pv10:  1024 subsets,    96 feasible bases,      CERTIFIED  vio 7.28e-03 -> 6.13e-03  [8s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv10+ev11 half   ev11:  1024 subsets,    96 feasible bases,      CERTIFIED  vio 4.16e-02 -> 4.11e-02  [7s]
+      pv14+ev15 half   pv14:   128 subsets,     8 feasible bases,      CERTIFIED  vio 6.81e-02 -> 6.77e-02  [1s]
+      pv14+ev15 half   ev15:   128 subsets,    16 feasible bases,      CERTIFIED  vio 9.47e-02 -> 9.40e-02  [1s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv8+ev9 half    pv8:  2048 subsets,   192 feasible bases,      CERTIFIED  vio 3.15e-01 -> 3.15e-01  [14s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv8+ev9 half    ev9:  2048 subsets,   192 feasible bases,      CERTIFIED  vio 2.21e-01 -> 2.20e-01  [15s]
+    seed 1: fixed point 800 kW, 4 mixed pairs, 4 credited (800 kW), 7s
+      pv0+ev1 half    pv0:   128 subsets,    16 feasible bases,      CERTIFIED  vio 1.92e-01 -> 1.91e-01  [1s]
+      pv0+ev1 half    ev1:   128 subsets,    16 feasible bases,      CERTIFIED  vio 1.56e-01 -> 1.56e-01  [1s]
+      pv12+ev13 half   pv12:   512 subsets,    64 feasible bases,      CERTIFIED  vio 8.93e-03 -> 8.07e-03  [4s]
+      pv12+ev13 half   ev13:   512 subsets,    64 feasible bases,      CERTIFIED  vio 4.20e-02 -> 4.13e-02  [5s]
+      pv14+ev15 half   pv14:   128 subsets,    16 feasible bases,      CERTIFIED  vio 1.69e-01 -> 1.69e-01  [2s]
+      pv14+ev15 half   ev15:   128 subsets,    16 feasible bases,      CERTIFIED  vio 1.40e-01 -> 1.39e-01  [2s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv8+ev9 half    pv8:  2048 subsets,   256 feasible bases,      CERTIFIED  vio 4.96e-01 -> 4.95e-01  [22s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    ev9:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 3.05e-01 -> 3.04e-01  [11s]
+    seed 2: fixed point 1000 kW, 3 mixed pairs, 3 credited (600 kW), 9s
+      pv10+ev11 half   pv10:   256 subsets,    32 feasible bases,      CERTIFIED  vio 1.41e-01 -> 1.41e-01  [4s]
+      pv10+ev11 half   ev11:   512 subsets,   128 feasible bases,      CERTIFIED  vio 1.45e-01 -> 1.44e-01  [7s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv4+ev5 half    pv4:  2048 subsets,   384 feasible bases,      CERTIFIED  vio 1.02e-01 -> 1.02e-01  [25s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv4+ev5 half    ev5:  2048 subsets,   384 feasible bases,      CERTIFIED  vio 1.17e-01 -> 1.16e-01  [26s]
+      pv6+ev7 half    pv6:   256 subsets,    32 feasible bases,      CERTIFIED  vio 1.49e-01 -> 1.49e-01  [6s]
+      pv6+ev7 half    ev7:   512 subsets,   128 feasible bases,      CERTIFIED  vio 1.49e-01 -> 1.48e-01  [9s]
+    seed 3: fixed point 600 kW, 5 mixed pairs, 5 credited (1000 kW), 22s
+      pv10+ev11 half   pv10:   128 subsets,     4 feasible bases,      CERTIFIED  vio 1.35e-01 -> 1.35e-01  [3s]
+      pv10+ev11 half   ev11:   128 subsets,     8 feasible bases,      CERTIFIED  vio 1.45e-01 -> 1.44e-01  [3s]
+      pv12+ev13 half   pv12:   512 subsets,    16 feasible bases,      CERTIFIED  vio 2.08e-01 -> 2.08e-01  [10s]
+      pv12+ev13 half   ev13:   512 subsets,    32 feasible bases,      CERTIFIED  vio 1.61e-01 -> 1.60e-01  [7s]
+      pv14+ev15 half   pv14:   256 subsets,     8 feasible bases,      CERTIFIED  vio 4.95e-02 -> 4.91e-02  [4s]
+      pv14+ev15 half   ev15:   256 subsets,    16 feasible bases,      CERTIFIED  vio 6.42e-02 -> 6.36e-02  [4s]
+      pv2+ev3 half    pv2:   256 subsets,     8 feasible bases,      CERTIFIED  vio 6.10e-02 -> 5.96e-02  [4s]
+      pv2+ev3 half    ev3:   256 subsets,    16 feasible bases,      CERTIFIED  vio 9.13e-02 -> 9.03e-02  [5s]
+      pv4+ev5 half    pv4:   256 subsets,     8 feasible bases,      CERTIFIED  vio 2.95e-02 -> 2.90e-02  [5s]
+      pv4+ev5 half    ev5:   256 subsets,    16 feasible bases,      CERTIFIED  vio 6.46e-02 -> 6.40e-02  [5s]
+    seed 4: fixed point 200 kW, 7 mixed pairs, 7 credited (1400 kW), 27s
+      pv0+ev1 half    pv0:   256 subsets,     4 feasible bases,      CERTIFIED  vio 9.72e-02 -> 9.71e-02  [5s]
+      pv0+ev1 half    ev1:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.24e-01 -> 1.24e-01  [5s]
+      pv10+ev11 half   pv10:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.17e-01 -> 1.17e-01  [5s]
+      pv10+ev11 half   ev11:   128 subsets,     2 feasible bases,      CERTIFIED  vio 1.17e-01 -> 1.17e-01  [3s]
+      pv12+ev13 half   pv12:   512 subsets,     8 feasible bases,      CERTIFIED  vio 1.19e-01 -> 1.19e-01  [10s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv12+ev13 half   ev13:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.41e-01 -> 1.41e-01  [16s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv14+ev15 half   pv14:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 3.25e-01 -> 3.25e-01  [16s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv14+ev15 half   ev15:  2048 subsets,    32 feasible bases,      CERTIFIED  vio 2.28e-01 -> 2.28e-01  [32s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    pv2:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 2.34e-01 -> 2.34e-01  [16s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    ev3:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.74e-01 -> 1.74e-01  [16s]
+      pv4+ev5 half    pv4:   512 subsets,     8 feasible bases,      CERTIFIED  vio 7.40e-02 -> 7.38e-02  [9s]
+      pv4+ev5 half    ev5:   512 subsets,     8 feasible bases,      CERTIFIED  vio 9.58e-02 -> 9.57e-02  [9s]
+      pv8+ev9 half    pv8:   128 subsets,     2 feasible bases,      CERTIFIED  vio 5.73e-02 -> 5.70e-02  [3s]
+      pv8+ev9 half    ev9:   128 subsets,     2 feasible bases,      CERTIFIED  vio 8.61e-02 -> 8.59e-02  [3s]
+    seed 5: fixed point 1200 kW, 2 mixed pairs, 2 credited (400 kW), 12s
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv2+ev3 half    pv2:  2048 subsets,  1024 feasible bases,      CERTIFIED  vio 5.03e-02 -> 4.79e-02  [32s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv2+ev3 half    ev3:  2048 subsets,  1024 feasible bases,      CERTIFIED  vio 7.93e-02 -> 7.74e-02  [30s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv6+ev7 half    pv6:  2048 subsets,  1024 feasible bases,      CERTIFIED  vio 1.87e-01 -> 1.86e-01  [30s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv6+ev7 half    ev7:  2048 subsets,  1024 feasible bases,      CERTIFIED  vio 1.60e-01 -> 1.58e-01  [26s]
+    seed 6: fixed point 800 kW, 4 mixed pairs, 4 credited (800 kW), 18s
+      pv12+ev13 half   pv12:   256 subsets,    24 feasible bases,      CERTIFIED  vio 4.56e-02 -> 4.45e-02  [5s]
+      pv12+ev13 half   ev13:   256 subsets,    24 feasible bases,      CERTIFIED  vio 8.24e-02 -> 8.18e-02  [5s]
+      pv14+ev15 half   pv14:   512 subsets,    32 feasible bases,      CERTIFIED  vio 1.50e-01 -> 1.50e-01  [9s]
+      pv14+ev15 half   ev15:   512 subsets,    64 feasible bases,      CERTIFIED  vio 1.43e-01 -> 1.42e-01  [9s]
+      pv2+ev3 half    pv2:   256 subsets,    24 feasible bases,      CERTIFIED  vio 1.10e-01 -> 1.08e-01  [5s]
+      pv2+ev3 half    ev3:   256 subsets,    24 feasible bases,      CERTIFIED  vio 1.19e-01 -> 1.18e-01  [5s]
+      pv8+ev9 half    pv8:   256 subsets,    24 feasible bases,      CERTIFIED  vio 1.32e-01 -> 1.31e-01  [5s]
+      pv8+ev9 half    ev9:   256 subsets,    24 feasible bases,      CERTIFIED  vio 1.22e-01 -> 1.21e-01  [5s]
+    seed 7: fixed point 600 kW, 5 mixed pairs, 5 credited (1000 kW), 19s
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    pv0:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 3.48e-01 -> 3.47e-01  [18s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    ev1:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 2.39e-01 -> 2.37e-01  [17s]
+      pv10+ev11 half   pv10:   128 subsets,     8 feasible bases,      CERTIFIED  vio 5.76e-02 -> 5.66e-02  [3s]
+      pv10+ev11 half   ev11:   128 subsets,     8 feasible bases,      CERTIFIED  vio 6.86e-02 -> 6.77e-02  [3s]
+      pv14+ev15 half   pv14:   128 subsets,     8 feasible bases,      CERTIFIED  vio 4.97e-02 -> 4.94e-02  [3s]
+      pv14+ev15 half   ev15:   128 subsets,     8 feasible bases,      CERTIFIED  vio 6.51e-02 -> 6.49e-02  [3s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    pv2:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 2.18e-01 -> 2.18e-01  [19s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    ev3:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 2.02e-01 -> 2.02e-01  [19s]
+      pv4+ev5 half    pv4:   128 subsets,     8 feasible bases,      CERTIFIED  vio 1.42e-01 -> 1.42e-01  [3s]
+      pv4+ev5 half    ev5:   128 subsets,     8 feasible bases,      CERTIFIED  vio 1.51e-01 -> 1.51e-01  [3s]
+    seed 8: fixed point 400 kW, 6 mixed pairs, 6 credited (1200 kW), 26s
+      pv0+ev1 half    pv0:   512 subsets,    16 feasible bases,      CERTIFIED  vio 8.84e-02 -> 8.80e-02  [10s]
+      pv0+ev1 half    ev1:   512 subsets,    16 feasible bases,      CERTIFIED  vio 1.14e-01 -> 1.14e-01  [10s]
+      pv14+ev15 half   pv14:   256 subsets,     8 feasible bases,      CERTIFIED  vio 1.06e-01 -> 1.06e-01  [6s]
+      pv14+ev15 half   ev15:   256 subsets,     8 feasible bases,      CERTIFIED  vio 1.15e-01 -> 1.14e-01  [6s]
+      pv2+ev3 half    pv2:   128 subsets,     4 feasible bases,      CERTIFIED  vio 6.23e-02 -> 6.21e-02  [3s]
+      pv2+ev3 half    ev3:   128 subsets,     4 feasible bases,      CERTIFIED  vio 8.90e-02 -> 8.89e-02  [3s]
+      pv4+ev5 half    pv4:   512 subsets,    16 feasible bases,      CERTIFIED  vio 1.95e-01 -> 1.94e-01  [9s]
+      pv4+ev5 half    ev5:   512 subsets,    16 feasible bases,      CERTIFIED  vio 1.67e-01 -> 1.67e-01  [10s]
+      pv6+ev7 half    pv6:   256 subsets,     8 feasible bases,      CERTIFIED  vio 2.00e-01 -> 2.00e-01  [6s]
+      pv6+ev7 half    ev7:   512 subsets,    16 feasible bases,      CERTIFIED  vio 1.79e-01 -> 1.79e-01  [11s]
+      pv8+ev9 half    pv8:   512 subsets,    16 feasible bases,      CERTIFIED  vio 1.07e-01 -> 1.07e-01  [11s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    ev9:  1024 subsets,    32 feasible bases,      CERTIFIED  vio 1.31e-01 -> 1.31e-01  [19s]
+    seed 9: fixed point 200 kW, 7 mixed pairs, 7 credited (1400 kW), 25s
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    pv0:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 6.52e-02 -> 6.50e-02  [16s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    ev1:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 7.39e-02 -> 7.38e-02  [18s]
+      pv10+ev11 half   pv10:   512 subsets,     8 feasible bases,      CERTIFIED  vio 1.14e-01 -> 1.14e-01  [10s]
+      pv10+ev11 half   ev11:   512 subsets,     8 feasible bases,      CERTIFIED  vio 1.30e-01 -> 1.29e-01  [9s]
+      pv14+ev15 half   pv14:   256 subsets,     4 feasible bases,      CERTIFIED  vio 7.06e-02 -> 7.04e-02  [5s]
+      pv14+ev15 half   ev15:   256 subsets,     4 feasible bases,      CERTIFIED  vio 7.89e-02 -> 7.87e-02  [5s]
+      pv2+ev3 half    pv2:   256 subsets,     4 feasible bases,      CERTIFIED  vio 4.58e-02 -> 4.56e-02  [5s]
+      pv2+ev3 half    ev3:   256 subsets,     4 feasible bases,      CERTIFIED  vio 7.33e-02 -> 7.32e-02  [5s]
+      pv4+ev5 half    pv4:   256 subsets,     4 feasible bases,      CERTIFIED  vio 6.38e-03 -> 5.87e-03  [5s]
+      pv4+ev5 half    ev5:   256 subsets,     4 feasible bases,      CERTIFIED  vio 4.83e-02 -> 4.78e-02  [4s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    pv6:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 9.73e-02 -> 9.72e-02  [14s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    ev7:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.13e-01 -> 1.13e-01  [14s]
+      pv8+ev9 half    pv8:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.37e-02 -> 1.31e-02  [5s]
+      pv8+ev9 half    ev9:   256 subsets,     4 feasible bases,      CERTIFIED  vio 6.51e-02 -> 6.47e-02  [5s]
+    seed 10: fixed point 600 kW, 5 mixed pairs, 5 credited (1000 kW), 23s
+      pv10+ev11 half   pv10:   128 subsets,     4 feasible bases,      CERTIFIED  vio 8.67e-01 -> 8.66e-01  [3s]
+      64/16384 solves
+      4096/16384 solves
+      8192/16384 solves
+      12288/16384 solves
+      16384/16384 solves
+      pv10+ev11 half   ev11:  8192 subsets,   384 feasible bases,      CERTIFIED  vio 4.83e-01 -> 4.82e-01  [133s]
+      pv12+ev13 half   pv12:   256 subsets,     8 feasible bases,      CERTIFIED  vio 8.39e-03 -> 7.76e-03  [5s]
+      pv12+ev13 half   ev13:   256 subsets,    16 feasible bases,      CERTIFIED  vio 7.64e-02 -> 7.57e-02  [5s]
+      pv2+ev3 half    pv2:   128 subsets,     4 feasible bases,      CERTIFIED  vio 7.60e-02 -> 7.53e-02  [3s]
+      pv2+ev3 half    ev3:   128 subsets,     8 feasible bases,      CERTIFIED  vio 1.07e-01 -> 1.07e-01  [3s]
+      pv4+ev5 half    pv4:   512 subsets,    16 feasible bases,      CERTIFIED  vio 6.67e-01 -> 6.67e-01  [10s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv4+ev5 half    ev5:  2048 subsets,    96 feasible bases,      CERTIFIED  vio 3.18e-01 -> 3.18e-01  [38s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    pv8:  1024 subsets,    48 feasible bases,      CERTIFIED  vio 3.69e-01 -> 3.69e-01  [19s]
+      pv8+ev9 half    ev9:   512 subsets,    32 feasible bases,      CERTIFIED  vio 2.60e-01 -> 2.60e-01  [10s]
+    seed 11: fixed point 200 kW, 8 mixed pairs, 7 credited (1400 kW), 31s
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    pv0:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 3.95e-01 -> 3.95e-01  [20s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    ev1:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 2.33e-01 -> 2.33e-01  [20s]
+      pv10+ev11 half   pv10:   256 subsets,     4 feasible bases,      CERTIFIED  vio 8.23e-02 -> 8.21e-02  [6s]
+      pv10+ev11 half   ev11:   256 subsets,     4 feasible bases,      CERTIFIED  vio 8.75e-02 -> 8.74e-02  [6s]
+      pv12+ev13 half   pv12:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.50e-01 -> 1.50e-01  [6s]
+      pv12+ev13 half   ev13:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.46e-01 -> 1.46e-01  [6s]
+      pv14+ev15 half   pv14:   128 subsets,     2 feasible bases,      CERTIFIED  vio 1.55e-01 -> 1.54e-01  [3s]
+      pv14+ev15 half   ev15:   128 subsets,     2 feasible bases,      CERTIFIED  vio 1.52e-01 -> 1.52e-01  [4s]
+      pv2+ev3 half    pv2:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.49e-01 -> 1.49e-01  [6s]
+      pv2+ev3 half    ev3:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.39e-01 -> 1.39e-01  [6s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    pv6:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 2.19e-01 -> 2.19e-01  [21s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    ev7:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.59e-01 -> 1.59e-01  [21s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    pv8:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 2.69e-01 -> 2.69e-01  [22s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    ev9:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.99e-01 -> 1.98e-01  [21s]
+    seed 12: fixed point 800 kW, 4 mixed pairs, 4 credited (800 kW), 16s
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    pv0:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 3.89e-01 -> 3.88e-01  [18s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    ev1:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 2.31e-01 -> 2.31e-01  [18s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv14+ev15 half   pv14:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 3.84e-01 -> 3.84e-01  [16s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv14+ev15 half   ev15:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 2.70e-01 -> 2.70e-01  [13s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    pv2:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 1.64e-01 -> 1.64e-01  [17s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    ev3:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 1.48e-01 -> 1.47e-01  [19s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    pv6:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 2.39e-01 -> 2.39e-01  [19s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    ev7:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 1.91e-01 -> 1.91e-01  [18s]
+    seed 13: fixed point 1200 kW, 2 mixed pairs, 2 credited (400 kW), 15s
+      pv0+ev1 half    pv0:   256 subsets,    64 feasible bases,      CERTIFIED  vio 3.15e-01 -> 3.15e-01  [6s]
+      pv0+ev1 half    ev1:   256 subsets,   128 feasible bases,      CERTIFIED  vio 2.21e-01 -> 2.20e-01  [6s]
+      pv2+ev3 half    pv2:   512 subsets,   192 feasible bases,      CERTIFIED  vio 1.72e-02 -> 1.63e-02  [10s]
+      pv2+ev3 half    ev3:   512 subsets,   192 feasible bases,      CERTIFIED  vio 4.66e-02 -> 4.59e-02  [10s]
+    seed 14: fixed point 1000 kW, 3 mixed pairs, 3 credited (600 kW), 12s
+      pv0+ev1 half    pv0:   512 subsets,    96 feasible bases,      CERTIFIED  vio 5.66e-01 -> 5.63e-01  [7s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv0+ev1 half    ev1:  2048 subsets,   512 feasible bases,      CERTIFIED  vio 3.75e-01 -> 3.73e-01  [32s]
+      pv12+ev13 half   pv12:   512 subsets,    96 feasible bases,      CERTIFIED  vio 3.14e-01 -> 3.13e-01  [11s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv12+ev13 half   ev13:  1024 subsets,   192 feasible bases,      CERTIFIED  vio 2.39e-01 -> 2.38e-01  [19s]
+      pv14+ev15 half   pv14:   128 subsets,    16 feasible bases,      CERTIFIED  vio 2.18e-01 -> 2.18e-01  [3s]
+      pv14+ev15 half   ev15:   128 subsets,    32 feasible bases,      CERTIFIED  vio 1.62e-01 -> 1.61e-01  [4s]
+    seed 15: fixed point 400 kW, 6 mixed pairs, 6 credited (1200 kW), 29s
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    pv0:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 2.32e-01 -> 2.32e-01  [19s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv0+ev1 half    ev1:  1024 subsets,    32 feasible bases,      CERTIFIED  vio 1.91e-01 -> 1.90e-01  [19s]
+      pv10+ev11 half   pv10:   256 subsets,     4 feasible bases,      CERTIFIED  vio 6.09e-02 -> 6.07e-02  [6s]
+      pv10+ev11 half   ev11:   256 subsets,     8 feasible bases,      CERTIFIED  vio 9.69e-02 -> 9.65e-02  [6s]
+      pv14+ev15 half   pv14:   256 subsets,     4 feasible bases,      CERTIFIED  vio 1.44e-01 -> 1.44e-01  [5s]
+      pv14+ev15 half   ev15:   512 subsets,    16 feasible bases,      CERTIFIED  vio 1.48e-01 -> 1.47e-01  [11s]
+      pv2+ev3 half    pv2:   256 subsets,     4 feasible bases,      CERTIFIED  vio 6.04e-02 -> 6.02e-02  [5s]
+      pv2+ev3 half    ev3:   256 subsets,     8 feasible bases,      CERTIFIED  vio 9.85e-02 -> 9.81e-02  [6s]
+      pv4+ev5 half    pv4:   512 subsets,    12 feasible bases,      CERTIFIED  vio 1.52e-01 -> 1.52e-01  [10s]
+      pv4+ev5 half    ev5:   512 subsets,    12 feasible bases,      CERTIFIED  vio 1.37e-01 -> 1.37e-01  [10s]
+      pv8+ev9 half    pv8:   128 subsets,     2 feasible bases,      CERTIFIED  vio 2.84e-02 -> 2.83e-02  [3s]
+      pv8+ev9 half    ev9:   128 subsets,     4 feasible bases,      CERTIFIED  vio 6.77e-02 -> 6.61e-02  [3s]
+    seed 16: fixed point 200 kW, 7 mixed pairs, 7 credited (1400 kW), 26s
+      pv0+ev1 half    pv0:   128 subsets,     2 feasible bases,      CERTIFIED  vio 1.91e-01 -> 1.91e-01  [3s]
+      pv0+ev1 half    ev1:   128 subsets,     2 feasible bases,      CERTIFIED  vio 1.68e-01 -> 1.68e-01  [3s]
+      pv10+ev11 half   pv10:   128 subsets,     2 feasible bases,      CERTIFIED  vio 8.84e-02 -> 8.81e-02  [3s]
+      pv10+ev11 half   ev11:   128 subsets,     2 feasible bases,      CERTIFIED  vio 1.14e-01 -> 1.14e-01  [3s]
+      pv12+ev13 half   pv12:   128 subsets,     2 feasible bases,      CERTIFIED  vio 6.81e-02 -> 6.74e-02  [3s]
+      pv12+ev13 half   ev13:   128 subsets,     2 feasible bases,      CERTIFIED  vio 7.98e-02 -> 7.94e-02  [3s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    pv2:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.67e-01 -> 1.67e-01  [17s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv2+ev3 half    ev3:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.54e-01 -> 1.54e-01  [26s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv4+ev5 half    pv4:  2048 subsets,    32 feasible bases,      CERTIFIED  vio 3.49e-01 -> 3.49e-01  [52s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv4+ev5 half    ev5:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 2.05e-01 -> 2.05e-01  [29s]
+      pv6+ev7 half    pv6:   256 subsets,     4 feasible bases,      CERTIFIED  vio 9.27e-03 -> 9.02e-03  [10s]
+      pv6+ev7 half    ev7:   256 subsets,     4 feasible bases,      CERTIFIED  vio 5.36e-02 -> 5.34e-02  [9s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    pv8:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.60e-01 -> 1.60e-01  [27s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    ev9:  1024 subsets,    16 feasible bases,      CERTIFIED  vio 1.59e-01 -> 1.59e-01  [27s]
+    seed 17: fixed point 600 kW, 5 mixed pairs, 5 credited (1000 kW), 40s
+      pv0+ev1 half    pv0:   256 subsets,     8 feasible bases,      CERTIFIED  vio 8.13e-04 -> 6.82e-05  [8s]
+      pv0+ev1 half    ev1:   256 subsets,    16 feasible bases,      CERTIFIED  vio 4.16e-02 -> 4.08e-02  [8s]
+      pv10+ev11 half   pv10:   256 subsets,     8 feasible bases,      CERTIFIED  vio 3.50e-02 -> 3.43e-02  [7s]
+      pv10+ev11 half   ev11:   256 subsets,    16 feasible bases,      CERTIFIED  vio 6.04e-02 -> 5.96e-02  [7s]
+      pv12+ev13 half   pv12:   512 subsets,    24 feasible bases,      CERTIFIED  vio 3.68e-01 -> 3.68e-01  [12s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv12+ev13 half   ev13:  2048 subsets,   128 feasible bases,      CERTIFIED  vio 2.46e-01 -> 2.46e-01  [44s]
+      pv2+ev3 half    pv2:   256 subsets,    12 feasible bases,      CERTIFIED  vio 5.31e-01 -> 5.30e-01  [9s]
+      64/8192 solves
+      2048/8192 solves
+      4096/8192 solves
+      6144/8192 solves
+      8192/8192 solves
+      pv2+ev3 half    ev3:  4096 subsets,   256 feasible bases,      CERTIFIED  vio 3.30e-01 -> 3.30e-01  [98s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    pv6:  1024 subsets,    32 feasible bases,      CERTIFIED  vio 2.34e-01 -> 2.34e-01  [26s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    ev7:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 1.74e-01 -> 1.73e-01  [29s]
+    seed 18: fixed point 400 kW, 6 mixed pairs, 6 credited (1200 kW), 45s
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv10+ev11 half   pv10:  2048 subsets,    64 feasible bases,      CERTIFIED  vio 8.21e-02 -> 8.12e-02  [56s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv10+ev11 half   ev11:  2048 subsets,    64 feasible bases,      CERTIFIED  vio 1.10e-01 -> 1.09e-01  [48s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv12+ev13 half   pv12:  2048 subsets,    64 feasible bases,      CERTIFIED  vio 4.25e-01 -> 4.24e-01  [44s]
+      pv12+ev13 half   ev13:   512 subsets,    16 feasible bases,      CERTIFIED  vio 2.66e-01 -> 2.66e-01  [12s]
+      pv14+ev15 half   pv14:   128 subsets,     4 feasible bases,      CERTIFIED  vio 2.35e-02 -> 2.29e-02  [4s]
+      pv14+ev15 half   ev15:   128 subsets,     4 feasible bases,      CERTIFIED  vio 6.62e-02 -> 6.59e-02  [5s]
+      pv2+ev3 half    pv2:   128 subsets,     4 feasible bases,      CERTIFIED  vio 3.91e-02 -> 3.72e-02  [4s]
+      pv2+ev3 half    ev3:   128 subsets,     4 feasible bases,      CERTIFIED  vio 8.66e-02 -> 8.54e-02  [4s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv6+ev7 half    pv6:  2048 subsets,    64 feasible bases,      CERTIFIED  vio 1.13e-01 -> 1.12e-01  [38s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv6+ev7 half    ev7:  2048 subsets,    64 feasible bases,      CERTIFIED  vio 1.02e-01 -> 1.02e-01  [37s]
+      64/4096 solves
+      1024/4096 solves
+      2048/4096 solves
+      3072/4096 solves
+      4096/4096 solves
+      pv8+ev9 half    pv8:  2048 subsets,    64 feasible bases,      CERTIFIED  vio 6.72e-01 -> 6.71e-01  [53s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv8+ev9 half    ev9:  1024 subsets,    32 feasible bases,      CERTIFIED  vio 4.08e-01 -> 4.08e-01  [29s]
+    seed 19: fixed point 800 kW, 4 mixed pairs, 4 credited (800 kW), 31s
+      pv10+ev11 half   pv10:   256 subsets,    16 feasible bases,      CERTIFIED  vio 1.25e-01 -> 1.24e-01  [8s]
+      pv10+ev11 half   ev11:   256 subsets,    32 feasible bases,      CERTIFIED  vio 1.35e-01 -> 1.34e-01  [8s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv14+ev15 half   pv14:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 1.43e-01 -> 1.42e-01  [27s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv14+ev15 half   ev15:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 1.51e-01 -> 1.50e-01  [24s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    pv6:  1024 subsets,    64 feasible bases,      CERTIFIED  vio 4.94e-03 -> 4.28e-03  [22s]
+      64/2048 solves
+      512/2048 solves
+      1024/2048 solves
+      1536/2048 solves
+      2048/2048 solves
+      pv6+ev7 half    ev7:  1024 subsets,   128 feasible bases,      CERTIFIED  vio 3.48e-02 -> 3.41e-02  [22s]
+      pv8+ev9 half    pv8:   256 subsets,    16 feasible bases,      CERTIFIED  vio 1.06e-01 -> 1.06e-01  [9s]
+      pv8+ev9 half    ev9:   256 subsets,    32 feasible bases,      CERTIFIED  vio 1.14e-01 -> 1.13e-01  [9s]
+
+============================================================================================
+
+  SUMMARY
+
+         halves  pairs  subsets  feasible_bases  seated  certified  median_relief  truncated
+cell                                                                                        
+smartds     192      8   134656           12500       0        192       0.000366          0
+
+  certified = halves no feasible outside base case seats. Those are
+  operator-independent by exhaustion; Proposition 1 is not needed for them.
+  seated > 0 on any half refutes the claim for its pair.
+
+                  halves  seated  median_hops  median_m
+cell    same_bus                                       
+smartds True         192       0          0.0       0.0
+
+  saved -> outputs/m122_outside_relief_smartds.csv
+

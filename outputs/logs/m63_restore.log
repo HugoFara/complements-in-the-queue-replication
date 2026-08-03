@@ -1,0 +1,29 @@
+
+  M63 -- SEGREGATION: PARALLEL (M58) vs SEQUENTIAL vs JOINT  (Ckt7)
+
+  one fixed queue of K=17 at 100 kW; median over seeds [0, 1, 2].
+  RESIDUAL = joint - best sequential order = capacity NO study order recovers.
+
+    src  ld% |  SEG-par  SEQ-pv1  SEQ-ld1  bestSEQ   JOINT |  vs par  vs SEQ  par-safe
+  ------------------------------------------------------------------------------------
+   1.05  30% |     300      300      500      500     700 |   +133%    +40%       yes
+   1.05  50% |     300      300      500      500    1300 |   +333%   +160%       yes
+   1.05  70% |     300      300      500      500    1100 |   +267%   +120%       yes
+   1.04  30% |     700      800     1100     1100    1200 |    +71%     +9%       yes
+   1.04  50% |     700     1100     1000     1100    1500 |   +114%    +36%       yes
+   1.04  70% |     700     1000      800     1000    1200 |    +71%    +20%       yes
+
+========================================================================================
+  source 1.05:
+    joint vs PARALLEL   (M58's number): +67% to +367% (median +225%)
+    joint vs BEST SEQ   (the RESIDUAL) : -0% to +180% (median +117%)   <- irreducible, no order recovers it
+    parallel union AC-safe: 9/9 (sequential unions are AC-safe by construction)
+  source 1.04:
+    joint vs PARALLEL   (M58's number): +43% to +129% (median +75%)
+    joint vs BEST SEQ   (the RESIDUAL) : +0% to +45% (median +20%)   <- irreducible, no order recovers it
+    parallel union AC-safe: 9/9 (sequential unions are AC-safe by construction)
+
+  If the RESIDUAL stays tens of %, segregation costs real capacity no order fixes.
+  If it collapses toward 0, the finding is 'there is a right study order'.
+
+  saved -> outputs/m63_sequential_ckt7.csv

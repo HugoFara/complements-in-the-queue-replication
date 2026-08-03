@@ -1,0 +1,29 @@
+
+  M104 -- CATEGORY B VOLT/VAR ON THE PHASE-RESOLVED REFERENCE CELL
+
+  The published Q(V) end-to-end number was measured on the BALANCED feeder at
+  50 kW and compared against a PHASE-RESOLVED unity-PF one. Same engine here.
+
+  seed |    gen   load    seq  JOINT    alt |    R1%    R*% | mixed  cert% |     QV  fail |     s
+  -----------------------------------------------------------------------------------------------
+     0 |    600      0   1200   1200   1200 |    0.0    0.0 |     0    nan |    302  0.0% |   145
+     1 |    500      0   1000   1200   1000 |   16.7   16.7 |     2  100.0 |    213  0.0% |   214
+     2 |    500      0   1000   1200   1000 |   16.7   16.7 |     2  100.0 |    225  0.0% |   210
+     3 |    450      0    900   1200   1000 |   25.0   16.7 |     2  100.0 |    375  0.0% |   241
+     4 |    600      0   1200   1200   1200 |    0.0    0.0 |     0    nan |    146  0.0% |   166
+     5 |    600      0   1200   1200   1200 |    0.0    0.0 |     0    nan |    298  0.0% |   275
+     6 |    500      0   1000   1200   1000 |   16.7   16.7 |     2  100.0 |    192  0.0% |   266
+     7 |    550      0   1100   1200   1100 |    8.3    8.3 |     1  100.0 |    243  0.0% |   111
+     8 |    550      0   1100   1200   1100 |    8.3    8.3 |     1  100.0 |    239  0.0% |   132
+     9 |    550      0   1100   1200   1100 |    8.3    8.3 |     1  100.0 |    169  0.0% |   102
+
+================================================================================================
+
+  Category B, phase-resolved: R1 median 8.3%, R* median 8.3%, positive in 7 of 10, negative in 0
+  pairs certified under the droop: median share 100.0% of R*, 7 of 10 draws carry a pair
+
+  Unity power factor, same engine and cell [m101_ckt24_unbalanced_50kw]:
+    R1 16.7%, R* 12.5%, positive 7/10, certified share 100%
+
+  saved -> outputs/m125_voltvar_reference.csv
+

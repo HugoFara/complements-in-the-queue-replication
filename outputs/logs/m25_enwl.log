@@ -1,0 +1,17 @@
+M25: two fairness metrics -- enwl (100 requests, seed 0)
+
+  stop-dead greedy (prefix, fair by construction)    432.3 kW  inversions=   0  max-displacement=  0 (N/2=50)
+  skip-continue (the honest FCFS baseline)           432.3 kW  inversions=   0  max-displacement=  0 (N/2=50)
+
+  fair search front (nsga2_search_fair), each feasible point under both metrics:
+  1 feasible points, 116s
+
+  free-search ceiling (any fairness):            433.1 kW
+  no zero-inversion point found in budget
+  no zero-displacement point found in budget
+  best under N/2 displacement cap (Fontinele):    433.1 kW  -> costs   0.0 kW
+
+  metric (dis)agreement -- Pareto-ish sample (inv, disp, kW):
+    inversions= 443  max-disp= 32    433.1 kW
+
+saved <repo>/outputs/m25_fairness_two_metrics_enwl.csv

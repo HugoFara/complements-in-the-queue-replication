@@ -1,0 +1,12 @@
+M24: seed distributions -- request-draw variance (25 draws, convex) vs. skip-continue baseline
+
+  network        n bound  J>S    margin kW (mean+-sd)  median        [min,max]   mean%  Wilcoxon p       t p
+  eulv          25    20   20       7.02 +-  7.53     4.59 [  -3.2,  28.6]   2.99    5.71e-05  1.25e-04 ***  (68s)
+  enwl          25    25    4      -1.04 +-  1.28    -1.24 [  -2.9,   2.2]  -0.24    1.30e-03  5.35e-04 **  (292s)
+  enwl_bound    25    11   10       2.17 +-  4.06     0.00 [   0.0,  19.2]   0.69    4.65e-03  1.52e-02 **  (77s)
+
+  Reading: a margin is only a real finding if it is both (a) practically
+  non-trivial and (b) significant. 'n.s.' or a mean margin inside +-sd of 0
+  should be downgraded from the headline.
+
+saved outputs/m24_seed_distributions.csv

@@ -1,0 +1,198 @@
+
+  M87 -- EXACT RESIDUALS BY ENUMERATION
+
+  Every subset AC-solved. JOINT, both tracks and both sequential orders are exact
+  optima, not heuristic lower bounds, so the residual between them is certified.
+
+  EPRI Ckt7 @1.06, random placement   (K=17, 100 kW)
+
+  seed 0:
+    K=17 (12 gen + 5 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 600 kW over 714 tied accept-set(s) x 32 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 4096 second-track subsets
+    feasible subsets      38624/131072 (29.5%)   [782s]
+    exact gen / load track  600 / 0 kW
+    exact best sequential   900 kW (gen-first 900, load-first 600)
+    exact JOINT             1400 kW
+    EXACT RESIDUAL R1       500 kW = 35.7% of joint
+    exact alternation       1400 kW  -> R* = 0.0%   [node cap reached]
+    heuristic joint         1400 kW  -> optimality gap -0 kW (-0.0%)
+    Pareto (gen/load kW)    1000/400
+
+  seed 1:
+    K=17 (12 gen + 5 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 700 kW over 462 tied accept-set(s) x 32 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 4096 second-track subsets
+    feasible subsets      26908/131072 (20.5%)   [710s]
+    exact gen / load track  700 / 0 kW
+    exact best sequential   1000 kW (gen-first 1000, load-first 700)
+    exact JOINT             1300 kW
+    EXACT RESIDUAL R1       300 kW = 23.1% of joint
+    exact alternation       1300 kW  -> R* = 0.0%
+    heuristic joint         1300 kW  -> optimality gap 0 kW (0.0%)
+    Pareto (gen/load kW)    1000/300
+
+  seed 2:
+    K=17 (12 gen + 5 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 800 kW over 49 tied accept-set(s) x 32 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 4096 second-track subsets
+    feasible subsets      15826/131072 (12.1%)   [712s]
+    exact gen / load track  800 / 0 kW
+    exact best sequential   1200 kW (gen-first 1200, load-first 800)
+    exact JOINT             1400 kW
+    EXACT RESIDUAL R1       200 kW = 14.3% of joint
+    exact alternation       1400 kW  -> R* = 0.0%
+    heuristic joint         1400 kW  -> optimality gap -0 kW (-0.0%)
+    Pareto (gen/load kW)    1000/400
+
+==============================================================================
+
+  EXACT vs HEURISTIC, over all cells
+
+    family  cells   exact R1 %   heur R1 %  joint gap %  exact R* %
+  ------------------------------------------------------------------
+      ckt7      3        23.1       23.1        -0.0        0.0
+
+  The residual under a re-weighted comparison metric (medians over cells)
+
+  w=0  w=0.1  w=0.25  w=0.5  w=0.75  w=0.9  w=1
+    0.0    8.1   15.8   23.1   27.3   29.0   30.0
+
+  w is the weight on generation kW; w=0.5 is the paper's objective rescaled,
+  w=1 values generation only and w=0 load only. The segregated tracks are not
+  re-weighted -- a single-signed queue has nothing to trade off.
+
+  saved -> outputs/m110_exact_ckt7_106_lf0.3.csv
+
+
+  M87 -- EXACT RESIDUALS BY ENUMERATION
+
+  Every subset AC-solved. JOINT, both tracks and both sequential orders are exact
+  optima, not heuristic lower bounds, so the residual between them is certified.
+
+  EPRI Ckt7 @1.06, random placement   (K=17, 100 kW)
+
+  seed 0:
+    K=17 (9 gen + 8 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 600 kW over 84 tied accept-set(s) x 256 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 512 second-track subsets
+    feasible subsets      23575/131072 (18.0%)   [705s]
+    exact gen / load track  600 / 0 kW
+    exact best sequential   1000 kW (gen-first 1000, load-first 600)
+    exact JOINT             1500 kW
+    EXACT RESIDUAL R1       500 kW = 33.3% of joint
+    exact alternation       1500 kW  -> R* = 0.0%
+    heuristic joint         1500 kW  -> optimality gap 0 kW (0.0%)
+    Pareto (gen/load kW)    900/600
+
+  seed 1:
+    K=17 (9 gen + 8 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 700 kW over 28 tied accept-set(s) x 256 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 512 second-track subsets
+    feasible subsets      12002/131072 (9.2%)   [640s]
+    exact gen / load track  700 / 0 kW
+    exact best sequential   1000 kW (gen-first 1000, load-first 700)
+    exact JOINT             1400 kW
+    EXACT RESIDUAL R1       400 kW = 28.6% of joint
+    exact alternation       1400 kW  -> R* = 0.0%
+    heuristic joint         1400 kW  -> optimality gap -0 kW (-0.0%)
+    Pareto (gen/load kW)    900/500
+
+  seed 2:
+    K=17 (9 gen + 8 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 700 kW over 2 tied accept-set(s) x 256 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 512 second-track subsets
+    feasible subsets      2152/131072 (1.6%)   [646s]
+    exact gen / load track  700 / 0 kW
+    exact best sequential   1000 kW (gen-first 1000, load-first 700)
+    exact JOINT             1000 kW
+    EXACT RESIDUAL R1       0 kW = 0.0% of joint
+    exact alternation       1000 kW  -> R* = 0.0%
+    heuristic joint         1000 kW  -> optimality gap 0 kW (0.0%)
+    Pareto (gen/load kW)    700/300
+
+==============================================================================
+
+  EXACT vs HEURISTIC, over all cells
+
+    family  cells   exact R1 %   heur R1 %  joint gap %  exact R* %
+  ------------------------------------------------------------------
+      ckt7      3        28.6       28.6         0.0        0.0
+
+  The residual under a re-weighted comparison metric (medians over cells)
+
+  w=0  w=0.1  w=0.25  w=0.5  w=0.75  w=0.9  w=1
+   33.3   33.3   33.3   28.6   25.0   23.3   22.2
+
+  w is the weight on generation kW; w=0.5 is the paper's objective rescaled,
+  w=1 values generation only and w=0 load only. The segregated tracks are not
+  re-weighted -- a single-signed queue has nothing to trade off.
+
+  saved -> outputs/m110_exact_ckt7_106_lf0.5.csv
+
+
+  M87 -- EXACT RESIDUALS BY ENUMERATION
+
+  Every subset AC-solved. JOINT, both tracks and both sequential orders are exact
+  optima, not heuristic lower bounds, so the residual between them is certified.
+
+  EPRI Ckt7 @1.06, random placement   (K=17, 100 kW)
+
+  seed 0:
+    K=17 (5 gen + 12 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 500 kW over 1 tied accept-set(s) x 4096 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 32 second-track subsets
+    feasible subsets      708/131072 (0.5%)   [716s]
+    exact gen / load track  500 / 0 kW
+    exact best sequential   800 kW (gen-first 800, load-first 500)
+    exact JOINT             800 kW
+    EXACT RESIDUAL R1       0 kW = 0.0% of joint
+    exact alternation       800 kW  -> R* = 0.0%
+    heuristic joint         800 kW  -> optimality gap 0 kW (0.0%)
+    Pareto (gen/load kW)    500/300
+
+  seed 1:
+    K=17 (5 gen + 12 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 500 kW over 1 tied accept-set(s) x 4096 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 32 second-track subsets
+    feasible subsets      222/131072 (0.2%)   [706s]
+    exact gen / load track  500 / 0 kW
+    exact best sequential   700 kW (gen-first 700, load-first 500)
+    exact JOINT             700 kW
+    EXACT RESIDUAL R1       0 kW = 0.0% of joint
+    exact alternation       700 kW  -> R* = 0.0%
+    heuristic joint         700 kW  -> optimality gap -0 kW (-0.0%)
+    Pareto (gen/load kW)    500/200
+
+  seed 2:
+    K=17 (5 gen + 12 load) -> 131072 subsets
+    32768/131072 subsets (25%)    65536/131072 subsets (50%)    98304/131072 subsets (75%)    131072/131072 subsets (100%)                                                                seq gen-first: track optimum 400 kW over 1 tied accept-set(s) x 4096 second-track subsets
+    seq load-first: track optimum 0 kW over 1 tied accept-set(s) x 32 second-track subsets
+    feasible subsets      24/131072 (0.0%)   [681s]
+    exact gen / load track  400 / 0 kW
+    exact best sequential   500 kW (gen-first 500, load-first 400)
+    exact JOINT             500 kW
+    EXACT RESIDUAL R1       0 kW = 0.0% of joint
+    exact alternation       500 kW  -> R* = 0.0%
+    heuristic joint         500 kW  -> optimality gap 0 kW (0.0%)
+    Pareto (gen/load kW)    400/100
+
+==============================================================================
+
+  EXACT vs HEURISTIC, over all cells
+
+    family  cells   exact R1 %   heur R1 %  joint gap %  exact R* %
+  ------------------------------------------------------------------
+      ckt7      3         0.0        0.0         0.0        0.0
+
+  The residual under a re-weighted comparison metric (medians over cells)
+
+  w=0  w=0.1  w=0.25  w=0.5  w=0.75  w=0.9  w=1
+    0.0    0.0    0.0    0.0    0.0    0.0    0.0
+
+  w is the weight on generation kW; w=0.5 is the paper's objective rescaled,
+  w=1 values generation only and w=0 load only. The segregated tracks are not
+  re-weighted -- a single-signed queue has nothing to trade off.
+
+  saved -> outputs/m110_exact_ckt7_106_lf0.7.csv
+

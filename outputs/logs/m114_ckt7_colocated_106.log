@@ -1,0 +1,42 @@
+
+  M80 -- MULTI-ROUND ALTERNATION vs THE SINGLE-PASS RESIDUAL
+
+  Eq. (1) maxes over two single-pass block orders. A segregated utility can instead
+  re-study each track against the other's prior approvals, repeatedly, with no tariff
+  reform at all. If that fixed point recovers the residual, the paper's central noun
+  is wrong. Alternation >= single-pass sequential by construction.
+
+  EPRI Ckt7 @1.06, colocated placement   (K=17, 100 kW)
+  seed |    JOINT  bestSEQ  bestALT | resid 1-pass  resid alt  recovered | rounds  verify
+  ---------------------------------------------------------------------------------------
+     0 |     1600     1200     1400 |         400        200      50.0% |      8   AC ok
+     1 |     1600     1400     1600 |         200          0     100.0% |      5   AC ok
+     2 |     1600     1600     1600 |           0          0      n/a |      3   AC ok
+     3 |     1600     1200     1600 |         400          0     100.0% |      5   AC ok
+     4 |     1600     1600     1600 |           0          0      n/a |      3   AC ok
+     5 |     1600     1000     1600 |         600          0     100.0% |      5   AC ok
+     6 |     1600     1400     1400 |         200        200       0.0% |      6   AC ok
+     7 |     1600     1400     1400 |         200        200       0.0% |      6   AC ok
+     8 |     1600     1400     1400 |         200        200       0.0% |      6   AC ok
+     9 |     1600     1400     1600 |         200          0     100.0% |      5   AC ok
+    10 |     1600     1600     1600 |           0          0      n/a |      3   AC ok
+    11 |     1600     1200     1600 |         400          0     100.0% |      7   AC ok
+    12 |     1600     1200     1600 |         400          0     100.0% |      5   AC ok
+    13 |     1600     1000     1600 |         600          0     100.0% |      5   AC ok
+    14 |     1600     1400     1600 |         200          0     100.0% |      5   AC ok
+    15 |     1600     1200     1200 |         400        400       0.0% |      6   AC ok
+    16 |     1600     1400     1600 |         200          0     100.0% |      5   AC ok
+    17 |     1600     1200     1600 |         400          0     100.0% |      5   AC ok
+    18 |     1600     1200     1600 |         400          0     100.0% |      5   AC ok
+    19 |     1600     1200     1400 |         400        200      50.0% |      8   AC ok
+
+==============================================================================
+
+  SUMMARY -- residual as % of joint, single-pass (Eq. 1) vs alternating fixed point
+
+        family   n   1-pass      alt   recovered  survives   AC ok
+  ----------------------------------------------------------------
+          ckt7  20    18.7%     0.0%      100.0%      6/20   20/20
+
+  saved -> outputs/m114_ckt7_colocated_106.csv
+

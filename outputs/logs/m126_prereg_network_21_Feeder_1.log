@@ -1,0 +1,51 @@
+
+  M96 -- network_21/Feeder_1 SOLVED UNBALANCED, ON ITS NATIVE OPENDSS MODEL
+
+  Constraint set is what ENWL actually specifies: the per-node voltage band on
+  all three phases, and the 800 kVA substation transformer. Line thermal is
+  DROPPED, not defaulted -- the release carries no NormAmps anywhere, and the
+  balanced arm's uniform 0.4 kA is OpenDSS's fallback, not feeder data.
+
+  shipped (LoadMult=1): vmin 0.9891  vmax 0.9998  trafo 2.9%
+
+  RELAX, unbalanced: limits clamped to the baseline's own values, 0.9400--1.1000 pu
+    balanced arm clamps to 0.817--1.100
+
+  seed |    gen   load    seq  JOINT    alt |    R1%    R*% | mixed  cert%
+  ------------------------------------------------------------------------
+     0 |    350    200    800    900    900 |   11.1    0.0 |     0    nan
+     1 |    400    200    800    950    800 |   15.8   15.8 |     4   66.7
+     2 |    450    300   1000   1150   1150 |   13.0    0.0 |     0    nan
+     3 |    350    250    800   1200   1200 |   33.3    0.0 |     0    nan
+     4 |    450    200    900   1150   1150 |   21.7    0.0 |     0    nan
+     5 |    350    200    700    800    700 |   12.5   12.5 |     0    0.0
+     6 |    450    200    850   1100   1100 |   22.7    0.0 |     0    nan
+     7 |    500    350    950   1000   1000 |    5.0    0.0 |     0    nan
+     8 |    450    350    950   1150   1150 |   17.4    0.0 |     0    nan
+     9 |    450    250    950   1100   1100 |   13.6    0.0 |     0    nan
+    10 |    500    200   1000   1050   1050 |    4.8    0.0 |     0    nan
+    11 |    450    150    750   1000    900 |   25.0   10.0 |     4  100.0
+    12 |    550    200   1100   1200   1100 |    8.3    8.3 |     1  100.0
+    13 |    300    200    650    800    700 |   18.7   12.5 |     2  100.0
+    14 |    450    250    950   1050   1050 |    9.5    0.0 |     0    nan
+    15 |    450    200    850   1000    900 |   15.0   10.0 |     1  100.0
+    16 |    600    200   1150   1150   1150 |    0.0    0.0 |     0    nan
+    17 |    350    200    800   1050   1050 |   23.8    0.0 |     0    nan
+    18 |    400    250    850    950    950 |   10.5    0.0 |     0    nan
+    19 |    300    150    650    850    850 |   23.5    0.0 |     0    nan
+
+==============================================================================
+
+  SUMMARY -- median over draws
+
+    joint 1050 kW   R1 14.3%   R* 0.0%   R*>0 in 6/20
+    certified share of R*: median 100.0%, min 0.0%
+
+  BALANCED arm for n2f1 (m80_alt_s20, random placement):
+    R1 60.0%  R* 0.0%
+
+  A residual that survives here is one phase unbalance did not manufacture.
+  One that vanishes means the balanced solve was carrying the third mechanism.
+
+  saved -> outputs/m126_prereg_network_21_Feeder_1.csv
+

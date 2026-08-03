@@ -1,0 +1,28 @@
+
+  M102 -- PARTIAL APPROVAL ON THE REFERENCE CELL
+
+  Each 50 kW request split into 2 x 25.0 kW at the same bus.phase. Queue total unchanged.
+
+  seed |   K    gen   load    seq  JOINT    alt |    R1%    R*% | mixed  cert% |     s
+  ------------------------------------------------------------------------------------
+     0 |  48    600      0   1200   1200   1200 |    0.0    0.0 |     0    nan |   247
+     1 |  48    525      0   1050   1200   1200 |   12.5    0.0 |     0    nan |   207
+     2 |  48    550      0   1100   1200   1200 |    8.3    0.0 |     0    nan |   148
+     3 |  48    500      0   1000   1200   1100 |   16.7    8.3 |     4  100.0 |   248
+     4 |  48    600      0   1200   1200   1200 |    0.0    0.0 |     0    nan |   140
+     5 |  48    550      0   1100   1200   1200 |    8.3    0.0 |     0    nan |   188
+     6 |  48    525      0   1050   1200   1100 |   12.5    8.3 |     4  100.0 |   206
+     7 |  48    550      0   1100   1200   1200 |    8.3    0.0 |     0    nan |    97
+     8 |  48    525      0   1050   1200   1100 |   12.5    8.3 |     4  100.0 |   294
+     9 |  48    550      0   1100   1200   1100 |    8.3    8.3 |     4  100.0 |   181
+
+========================================================================================
+
+  split x2: R1 median 8.3%, R* median 0.0%, positive in 4 of 10
+
+  ATOMIC comparators on the same feeder and oracle:
+    K=24 @ 50 kW (1,200 kW queue): R1 16.7%, R* 12.5%, positive 7/10   [m101_ckt24_unbalanced_50kw]
+    K=24 @ 25 kW (  600 kW queue): R1  0.0%, R*  0.0%, positive 4/10   [m101_ckt24_unbalanced_25kw -- HALF the queue, not a granularity control]
+
+  saved -> outputs/m123_partial_approval.csv
+

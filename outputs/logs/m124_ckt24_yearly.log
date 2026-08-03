@@ -1,0 +1,15 @@
+
+  M103b -- THE RESIDUAL RE-MEASURED WITH THE YEAR AS THE ORACLE
+
+  oracle hours: {'min_LS_PhaseA': 6539, 'min_LS_PhaseB': 6539, 'min_LS_PhaseC': 6539, 'min_Other_Bus_Load': 6986, 'max_total': 972}
+
+  seed |    gen   load    seq  JOINT    alt |    R1%    R*% | mixed  cert% |  yr bad |     s
+  ------------------------------------------------------------------------------------------
+      2400/17520 hour-solves
+      4800/17520 hour-solves
+      7200/17520 hour-solves
+      9600/17520 hour-solves
+      12000/17520 hour-solves
+      14400/17520 hour-solves
+      16800/17520 hour-solves
+     0 |      0      0      0      0      0 |    0.0    0.0 |     0    nan |     389 |  1189

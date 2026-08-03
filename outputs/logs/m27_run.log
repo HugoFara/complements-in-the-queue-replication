@@ -1,0 +1,62 @@
+M27: voltage-limited SMART-DS regime map -- screening 21 urban-suburban feeders
+
+  uhs0_1247--udt14717      vmin=0.9439  FEASIBLE
+  uhs1_1247--udt15926      vmin=0.9620  FEASIBLE
+  uhs1_1247--udt20176      vmin=0.9332  infeasible (excluded)
+  uhs2_1247--udt10746      vmin=0.9641  FEASIBLE
+  uhs2_1247--udt12473      vmin=0.9463  FEASIBLE
+  uhs2_1247--udt9312       vmin=0.9540  FEASIBLE
+  uhs3_1247--udt1567       vmin=0.9603  FEASIBLE
+  uhs3_1247--udt1571       vmin=0.9739  FEASIBLE
+  uhs3_1247--udt1582       vmin=0.9670  FEASIBLE
+  uhs4_1247--udt11389      vmin=0.9646  FEASIBLE
+  uhs4_1247--udt12982      vmin=0.9620  FEASIBLE
+  uhs5_1247--udt159        vmin=0.9528  FEASIBLE
+  uhs5_1247--udt18558      vmin=0.9380  infeasible (excluded)
+  uhs5_1247--udt19869      vmin=0.9333  infeasible (excluded)
+  uhs5_1247--udt20368      vmin=0.9276  infeasible (excluded)
+  uhs6_1247--udt10788      vmin=0.9457  FEASIBLE
+  uhs6_1247--udt6570       vmin=0.9458  FEASIBLE
+  uhs6_1247--udt9964       vmin=0.8941  infeasible (excluded)
+  uhs7_1247--udt15849      vmin=0.9098  infeasible (excluded)
+  uhs7_1247--udt9662       vmin=0.9283  infeasible (excluded)
+  uhs7_1247--udt9675       vmin=0.9476  FEASIBLE
+
+14 baseline-feasible voltage-limited feeders; stop-dead vs skip-continue on all, nsga2_search_dss on 5 (K=40)
+
+  uhs0_1247--udt14717      stop-dead=  28.4( 2)  skip=  432.3(38/40)  strawman-collapse=  +1420%  skip-seats= 94%  9s
+  uhs1_1247--udt15926      stop-dead= 257.3(21)  skip=  450.9(39/40)  strawman-collapse=    +75%  skip-seats= 97%  5s
+  uhs2_1247--udt10746      stop-dead= 111.3(10)  skip=  437.4(38/40)  strawman-collapse=   +293%  skip-seats= 93%  joint=  387.2(33) vs-skip=-11.5%  34s
+  uhs2_1247--udt12473      stop-dead= 205.9(18)  skip=  439.1(38/40)  strawman-collapse=   +113%  skip-seats= 94%  joint=  408.7(35) vs-skip= -6.9%  54s
+  uhs2_1247--udt9312       stop-dead= 180.6(15)  skip=  438.4(38/40)  strawman-collapse=   +143%  skip-seats= 93%  3s
+  uhs3_1247--udt1567       stop-dead= 376.0(31)  skip=  454.5(39/40)  strawman-collapse=    +21%  skip-seats= 97%  4s
+  uhs3_1247--udt1571       stop-dead= 480.2(40)  skip=  480.2(40/40)  strawman-collapse=     +0%  skip-seats=100%  2s
+  uhs3_1247--udt1582       stop-dead= 479.7(40)  skip=  479.7(40/40)  strawman-collapse=     +0%  skip-seats=100%  2s
+  uhs4_1247--udt11389      stop-dead= 480.2(40)  skip=  480.2(40/40)  strawman-collapse=     +0%  skip-seats=100%  joint=  480.2(40) vs-skip= +0.0%  27s
+  uhs4_1247--udt12982      stop-dead= 367.2(31)  skip=  472.5(39/40)  strawman-collapse=    +29%  skip-seats= 98%  joint=  444.0(36) vs-skip= -6.0%  16s
+  uhs5_1247--udt159        stop-dead= 421.2(35)  skip=  457.3(38/40)  strawman-collapse=     +9%  skip-seats= 94%  3s
+  uhs6_1247--udt10788      stop-dead= 405.4(35)  skip=  441.9(39/40)  strawman-collapse=     +9%  skip-seats= 96%  4s
+  uhs6_1247--udt6570       stop-dead=   0.0( 0)  skip=  400.6(37/40)  strawman-collapse=   +inf%  skip-seats= 90%  8s
+  uhs7_1247--udt9675       stop-dead= 180.0(15)  skip=  436.9(38/40)  strawman-collapse=   +143%  skip-seats= 94%  joint=  429.7(37) vs-skip= -1.6%  96s
+
+total 267s
+======================================================================
+FINDING 1 -- the strawman collapse (search-INDEPENDENT: stop-dead vs skip-continue):
+  On 14 voltage-limited US feeders, switching the old stop-dead baseline to an honest
+  skip-continue FCFS walk recovers a median +29% more capacity
+  (range +0% to +1420%). The +192%/+1367% margins
+  experiments 39/40 reported were measuring joint-vs-STRAWMAN; against a real FCFS
+  baseline that capacity was never actually lost. skip-continue seats a median
+  95% of all requested kW.
+
+FINDING 2 -- joint (NSGA-II) does NOT beat honest FCFS on these large feeders:
+  on 5 size-spanning feeders, joint beats skip-continue on 0/5;
+  median joint-vs-skip = -6.0%. Skip-continue already seats ~94% of requested kW, so the
+  joint ceiling is close; and NSGA-II under-searches at this budget (no fast optimal
+  route exists for this oracle). Either way: no demonstrable joint advantage here.
+
+  INTERPRETATION: voltage-limiting is necessary but NOT sufficient for a joint advantage.
+  It needs strong request COUPLING (small/globally-saturated feeders, e.g. EULV +46%),
+  which these large real feeders -- demand spread over thousands of buses -- do not provide.
+
+saved <repo>/outputs/m27_smartds_voltage_regime.csv

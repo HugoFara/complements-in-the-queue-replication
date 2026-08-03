@@ -1,0 +1,67 @@
+
+  M77 -- REGIME CLASSIFICATION FROM SINGLE-SIGNED RUNS ONLY
+
+  The prediction below is computed from the generation-only and load-only studies.
+  No joint or sequential result enters it. The measured residual is looked up after.
+
+              cell      gen aggresses       load aggresses |   strict   relief |  residual  strict?  relief?
+  ----------------------------------------------------------------------------------------------------------
+         ckt7_1.04            voltage voltage+7 lines+3 trafos |  two-way  one-way |    8/9         yes       NO
+         ckt7_1.05            voltage voltage+7 lines+3 trafos |  two-way  one-way |    8/9         yes       NO
+         ckt7_1.06            1 trafo voltage+7 lines+3 trafos |  one-way  two-way |    5/9          NO      yes
+     enwl_n2f1_100           46 lines     voltage+46 lines |  two-way  two-way |    4/4         yes      yes
+
+================================================================================================
+  strict (both signs drive the SAME constraint to its limit): 60/80 cell-draws agree
+  relief (each sign's binding constraint is relieved by the other): 37/80 cell-draws agree
+
+  FALSIFICATIONS of the relief test:
+    ckt7_1.04 seed 0: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 1: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 2: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 3: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 4: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 5: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 6: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 7: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 8: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 9: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 10: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 11: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 12: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 13: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 14: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 15: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 16: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 17: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 18: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.04 seed 19: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 0: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 1: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 2: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 3: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 4: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 5: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 6: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 7: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 8: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 9: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 10: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 11: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 12: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 13: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 14: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 15: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 16: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 17: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 18: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.05 seed 19: predicted one-way, residual positive in 8/9 draws
+    ckt7_1.06 seed 2: predicted one-way, residual positive in 5/9 draws
+    ckt7_1.06 seed 7: predicted one-way, residual positive in 5/9 draws
+    ckt7_1.06 seed 15: predicted one-way, residual positive in 5/9 draws
+
+  Note the rule predicts POSSIBILITY at cell level, not sign at draw level: a
+  two-way cell may still show a zero residual in an individual draw where no
+  complementary pair happens to be electrically close enough to help.
+
+  saved -> outputs/m117_blind20_c.csv

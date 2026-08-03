@@ -1,0 +1,50 @@
+
+  D1 -- SMART-DS AGAINST ITS OWN YEAR, CERTIFIED AT EVERY INTERVAL
+
+  uhs2_1247--udt10746: 1382 native loads, 3443 nodes.
+  The snapshot the paper certifies against is the NON-COINCIDENT peak: every load at
+  its own annual maximum at once, 7,022 kW. The feeder's true
+  aggregate runs 612 - 3,537 kW (median 1,400), so the snapshot overstates native load by
+  2.0x at the annual peak and 5.0x at the median.
+
+  Load absorbs export and opposes import, so that error FLATTERS the generation
+  track and PENALIZES the load track. The residual is built from both.
+
+  K=16 co-located pairs at 100 kW; constraint set starts at [27463, 28038, 16291, 17636], GLDF anchored at t=(27463, 17636).
+
+  EXACT: all 2^16 = 65,536 subsets enumerated by AC power flow, at every certified interval.
+
+    seed 0: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [302s]
+    seed 1: feasible 4,096/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [319s]
+    seed 2: feasible 4,096/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [315s]
+    seed 3: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [272s]
+    seed 4: feasible 512/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [286s]
+    seed 5: feasible 16,384/65,536 | gen 600 load 600 seq 1200 alt 1200 JOINT 1600 | R1 25.0% R* 25.0% | 0 cuts [336s]
+      cut 1: year rejects {'load_alone': 3}, worst t=17344 viol 0.00108
+    seed 6: feasible 3,072/65,536 | gen 400 load 300 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 1 cuts [541s]
+    seed 7: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [267s]
+    seed 8: feasible 1,024/65,536 | gen 200 load 200 seq 400 alt 400 JOINT 1600 | R1 75.0% R* 75.0% | 0 cuts [259s]
+    seed 9: feasible 512/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [252s]
+    seed 10: feasible 1,024/65,536 | gen 200 load 200 seq 400 alt 400 JOINT 1600 | R1 75.0% R* 75.0% | 0 cuts [276s]
+    seed 11: feasible 640/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [264s]
+    seed 12: feasible 4,096/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [289s]
+    seed 13: feasible 16,384/65,536 | gen 600 load 600 seq 1200 alt 1200 JOINT 1600 | R1 25.0% R* 25.0% | 0 cuts [299s]
+    seed 14: feasible 4,096/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [284s]
+    seed 15: feasible 512/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [267s]
+    seed 16: feasible 512/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [274s]
+    seed 17: feasible 1,024/65,536 | gen 200 load 200 seq 400 alt 400 JOINT 1600 | R1 75.0% R* 75.0% | 0 cuts [279s]
+    seed 18: feasible 1,024/65,536 | gen 200 load 200 seq 400 alt 400 JOINT 1600 | R1 75.0% R* 75.0% | 0 cuts [275s]
+    seed 19: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [266s]
+
+  MEDIAN OVER 20 DRAWS -- exact, no optimizer anywhere
+
+    gen alone             300 kW
+    load alone            300 kW
+    best sequential       600 kW
+    best alternating      600 kW
+    JOINT                1600 kW
+    R1                   62.5 %
+    R*                   62.5 %   positive in 20/20 draws
+
+  saved -> outputs/d1_exact_year.csv
+

@@ -1,0 +1,39 @@
+
+  D1 -- SMART-DS AGAINST ITS OWN YEAR, CERTIFIED AT EVERY INTERVAL
+
+  uhs2_1247--udt10746: 1382 native loads, 3443 nodes.
+  The snapshot the paper certifies against is the NON-COINCIDENT peak: every load at
+  its own annual maximum at once, 7,022 kW. The feeder's true
+  aggregate runs 612 - 3,537 kW (median 1,400), so the snapshot overstates native load by
+  2.0x at the annual peak and 5.0x at the median.
+
+  Load absorbs export and opposes import, so that error FLATTERS the generation
+  track and PENALIZES the load track. The residual is built from both.
+
+  K=16 co-located pairs at 100 kW; constraint set starts at [10224, 10225, 10513, 11376, 11377, 16291, 17358, 17362, 17636, 27463, 28038], GLDF anchored at t=(27463, 17636).
+
+  EXACT: all 2^16 = 65,536 subsets enumerated by AC power flow, at every certified interval.
+
+    seed 0: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [463s]
+    seed 1: feasible 4,096/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [446s]
+    seed 2: feasible 4,096/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [466s]
+    seed 3: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [584s]
+    seed 4: feasible 512/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [479s]
+    seed 5: feasible 16,384/65,536 | gen 600 load 600 seq 1200 alt 1200 JOINT 1600 | R1 25.0% R* 25.0% | 0 cuts [634s]
+    seed 6: feasible 3,232/65,536 | gen 400 load 400 seq 800 alt 800 JOINT 1600 | R1 50.0% R* 50.0% | 0 cuts [504s]
+    seed 7: feasible 2,048/65,536 | gen 300 load 300 seq 600 alt 600 JOINT 1600 | R1 62.5% R* 62.5% | 0 cuts [397s]
+    seed 8: feasible 1,024/65,536 | gen 200 load 200 seq 400 alt 400 JOINT 1600 | R1 75.0% R* 75.0% | 0 cuts [396s]
+    seed 9: feasible 512/65,536 | gen 100 load 100 seq 200 alt 200 JOINT 1600 | R1 87.5% R* 87.5% | 0 cuts [408s]
+
+  MEDIAN OVER 10 DRAWS -- exact, no optimizer anywhere
+
+    gen alone             300 kW
+    load alone            300 kW
+    best sequential       600 kW
+    best alternating      600 kW
+    JOINT                1600 kW
+    R1                   62.5 %
+    R*                   62.5 %   positive in 10/10 draws
+
+  saved -> outputs/d1_exact_banded_b00.csv
+

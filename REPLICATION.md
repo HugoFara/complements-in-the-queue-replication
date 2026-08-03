@@ -17,6 +17,7 @@ numerical outputs behind each reported result. The manuscript itself is in
 | `src/gridsynth/` | The OpenDSS→pandapower importer every feeder arrives through, and the LV conductor catalogue the reinforcement lever prices against |
 | `experiments/` | 103 numbered scripts, one per experiment; each is runnable standalone |
 | `outputs/` | The results those scripts wrote, indexed by [`outputs/MANIFEST.md`](outputs/MANIFEST.md) |
+| `outputs/logs/` | Console logs of the original runs; the provenance behind much of that index |
 | `data/interconnection/` | The empirical interconnection-request size distribution behind Appendix A |
 | `docs/papers/` | The manuscript, the pre-registration, and the figure sources |
 | `docs/logs/` | Per-feeder laboratory notebooks: how each result was obtained, what was superseded, what was retracted |
@@ -61,13 +62,18 @@ rebuilt after any new run:
 uv run python tools/build_manifest.py
 ```
 
-Every attribution states the evidence it rests on, and roughly 40% of the files
-are marked **unattributed** rather than guessed at. Those were written by passing
-`--out <name>` on the command line, and this repository does not record the names
-that were used. Their configuration column is still exact — it is read out of the
-file — and the manifest names any figure or table script that consumes them. If
-you re-run an experiment, prefer its `--out` default so the manifest can attribute
-the result.
+205 of the 229 are attributed, and every attribution states the evidence it rests
+on. Most are read straight out of the source. The rest come from the console logs
+of the original runs, kept in [`outputs/logs/`](outputs/logs/) and fingerprinted
+against the prose each script prints; where that evidence overlaps the source, the
+two agree on 47 of 48 files.
+
+The remaining **24 are marked unattributed rather than guessed at**. Those were
+written by passing `--out <name>` on the command line, under names this repository
+records nowhere and no run log covers. Their configuration column is still exact —
+it is read out of the file — and the manifest names any figure or table script that
+consumes them. If you re-run an experiment, prefer its `--out` default, or keep the
+console log, so the result stays attributable.
 
 ## Feeder data is not included, and where to get it
 
