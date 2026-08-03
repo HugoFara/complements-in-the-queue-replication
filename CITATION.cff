@@ -13,6 +13,11 @@ abstract: >-
 type: software
 version: 1.0.0
 date-released: "2026-08-03"
+doi: 10.5281/zenodo.21774931
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21774931
+    description: Zenodo deposit of this archive
 license: MIT
 authors:
   - family-names: Farajallah

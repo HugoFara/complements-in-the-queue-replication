@@ -112,6 +112,9 @@ The 2.1 GB solver cache is also omitted; it is regenerated on demand.
 
 ## Citing this
 
+This archive is deposited at
+[doi:10.5281/zenodo.21774931](https://doi.org/10.5281/zenodo.21774931).
+
 [`CITATION.cff`](CITATION.cff) carries the machine-readable metadata; GitHub and
 Zenodo read it directly. It cites the archive itself and names the paper as the
 preferred citation. The paper entry is typed `unpublished` because it is an

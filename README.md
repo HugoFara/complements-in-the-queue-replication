@@ -29,5 +29,8 @@ lists each source and the path the scripts expect it at.
 [`outputs/MANIFEST.md`](outputs/MANIFEST.md) indexes every result file.
 
 The code is MIT-licensed ([`LICENSE`](LICENSE)); the feeder models and the
-vendored LaTeX class carry their own terms. To cite this work, see
-[`CITATION.cff`](CITATION.cff).
+vendored LaTeX class carry their own terms.
+
+This archive is deposited at
+[doi:10.5281/zenodo.21774931](https://doi.org/10.5281/zenodo.21774931); cite it
+with the metadata in [`CITATION.cff`](CITATION.cff).
