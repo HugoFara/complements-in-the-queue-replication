@@ -110,6 +110,14 @@ references to all of these survive in script docstrings and in the milestone
 bars quoted throughout `docs/joint-allocation-scope.md`; they will not resolve.
 The 2.1 GB solver cache is also omitted; it is regenerated on demand.
 
+## Citing this
+
+[`CITATION.cff`](CITATION.cff) carries the machine-readable metadata; GitHub and
+Zenodo read it directly. It cites the archive itself and names the paper as the
+preferred citation. The paper entry is typed `unpublished` because it is an
+unrefereed preprint — on acceptance, change it to `article` and add the journal
+and DOI.
+
 ## Licence
 
 The code in this archive is MIT-licensed — see [`LICENSE`](LICENSE). It does not

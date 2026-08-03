@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or its results, please cite the paper it accompanies
+  (see preferred-citation below).
+title: "Complements in the Queue: replication material"
+abstract: >-
+  The joint interconnection-allocation engine, the experiments behind
+  "Complements in the Queue", and the numerical results they produced. The
+  engine measures the residual - joint hosting capacity minus the best
+  sequential study order - on distribution feeders, using an AC-verified
+  Generalized-LinDistFlow instrument that certifies a feasible lower bound
+  rather than a relaxation.
+type: software
+version: 1.0.0
+date-released: "2026-08-03"
+license: MIT
+authors:
+  - family-names: Farajallah
+    given-names: Hugo
+    email: research@hugofara.net
+    orcid: "https://orcid.org/0009-0001-0769-4434"
+    affiliation: Independent Research
+keywords:
+  - hosting capacity
+  - interconnection queue
+  - distribution networks
+  - power flow
+  - mixed-integer programming
+  - pandapower
+  - OpenDSS
+preferred-citation:
+  # "unpublished" rather than "article": this is an unrefereed preprint with no
+  # venue yet. Change to "article" and add journal/volume/doi on acceptance.
+  type: unpublished
+  title: "Complements in the Queue: What Re-Studying Recovers, and What Only a
+    Joint Interconnection Study Can"
+  year: 2026
+  month: 8
+  authors:
+    - family-names: Farajallah
+      given-names: Hugo
+      email: research@hugofara.net
+      orcid: "https://orcid.org/0009-0001-0769-4434"
+      affiliation: Independent Research
+  notes: >-
+    Unrefereed preprint draft. Several power-flow-modeling correctness claims
+    are flagged in Section 7 as not independently verified by the author.
