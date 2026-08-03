@@ -1,0 +1,2 @@
+seed,k,size_kw,oracle_hours,gen_alone_kw,load_alone_kw,seg_parallel_kw,seq_genfirst_kw,seq_loadfirst_kw,best_sequential_kw,joint_kw,alternation_kw,r1_kw,rstar_kw,r1_pct,rstar_pct,n_mixed_pairs,certified_kw,certified_share_pct,verify_hours,verify_bad,verify_pct_bad,dt
+0,24,50.0,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,0,0.0,,8760,389,4.440639269406392,1189.012932062149

@@ -1,0 +1,28 @@
+[project]
+name = "complements-in-the-queue"
+version = "1.0.0"
+description = "Replication material for 'Complements in the Queue': the joint interconnection-allocation engine, its experiments, and their outputs"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.0",
+    # pandapower's optional power-flow accelerator; the searches are slow without it
+    "numba>=0.65.1",
+    "opendssdirect-py>=0.9.4",
+    "pandapower>=3.4.0",
+    "pymoo>=0.6.2",
+    # only experiments/27, which queries the ENWL open-data portal
+    "requests>=2.34.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gridsynth", "src/allocation"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

@@ -1,0 +1,2 @@
+k,thermal_rows,yardstick_kw,yardstick_n,feasible_iters,iters,completion_added,addable,addable_kw,maximal,best_walk_kw,median_walk_kw,best_walk_pct,median_walk_pct,yardstick_beaten,dt
+150,987,1145.27,149,3,3,0,0,0.0,True,1145.27,1145.27,100.0,100.0,False,3.61700177192688

@@ -1,0 +1,26 @@
+n_leftover,n_leftover_gen,n_leftover_load,n_addable_singles,n_same_sign_pairs,n_mixed_pairs,example_mixed_pair,family,seed,k,size_kw,fixed_point_kw,verdict,dt
+1,0,1,0,0,0,,ckt7,0,17,100.0,1600.0,dead end at depth 2,13.74828052520752
+2,0,2,0,0,0,,ckt7,1,17,100.0,1500.0,dead end at depth 2,13.113930463790894
+2,1,1,0,0,0,,ckt7,2,17,100.0,1500.0,dead end at depth 2,21.525625705718994
+2,0,2,0,0,0,,ckt7,3,17,100.0,1500.0,dead end at depth 2,16.72930932044983
+1,0,1,0,0,0,,enwl_n13f4,0,24,100.0,2300.0000000000005,dead end at depth 2,41.306092977523804
+15,6,9,0,0,54,r0+r5,enwl_n13f4,1,24,100.0,900.0,strict simultaneity,43.654250621795654
+1,0,1,0,0,0,,enwl_n13f4,2,24,100.0,2300.0000000000005,dead end at depth 2,28.435185194015503
+1,0,1,0,0,0,,enwl_n13f4,3,24,100.0,2300.0000000000005,dead end at depth 2,105.85573387145996
+4,0,4,0,0,0,,enwl_n2f1,0,24,100.0,2000.0,dead end at depth 2,51.67613339424133
+7,2,5,0,0,0,,enwl_n2f1,1,24,100.0,1700.0000000000002,dead end at depth 2,29.06045937538147
+5,1,4,0,0,0,,enwl_n2f1,2,24,100.0,1900.0000000000002,dead end at depth 2,29.273994207382202
+2,0,2,0,0,0,,enwl_n2f1,3,24,100.0,2200.0,dead end at depth 2,39.1889922618866
+19,9,10,0,0,0,,ckt24,0,24,100.0,500.0,dead end at depth 2,46.039902210235596
+17,8,9,0,0,0,,ckt24,1,24,100.0,700.0000000000001,dead end at depth 2,43.0771050453186
+18,7,11,0,0,0,,ckt24,2,24,100.0,600.0000000000001,dead end at depth 2,43.956812143325806
+19,9,10,0,0,0,,ckt24,3,24,100.0,500.0,dead end at depth 2,47.08627796173096
+0,0,0,0,0,0,,spur,0,12,500.0,6000.0,dead end at depth 2,5.268018484115601
+0,0,0,0,0,0,,swiss55,0,48,500.0,24000.0,dead end at depth 2,3.39949631690979
+0,0,0,0,0,0,,swiss55,1,48,500.0,24000.0,dead end at depth 2,4.011204481124878
+0,0,0,0,0,0,,swiss55,2,48,500.0,24000.0,dead end at depth 2,4.05257511138916
+0,0,0,0,0,0,,swiss55,3,48,500.0,24000.0,dead end at depth 2,3.59700870513916
+8,4,4,0,0,4,pv0+ev1,smartds_colocated,0,16,100.0,800.0,strict simultaneity,14.506726026535034
+8,4,4,0,0,4,pv0+ev1,smartds_colocated,1,16,100.0,800.0,strict simultaneity,13.10432744026184
+6,3,3,0,0,3,pv4+ev5,smartds_colocated,2,16,100.0,1000.0,strict simultaneity,16.339824676513672
+10,5,5,0,0,5,pv2+ev3,smartds_colocated,3,16,100.0,600.0000000000001,strict simultaneity,21.51438283920288

@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Third-party feeder models and the solver cache. Neither is redistributed here;
+# see REPLICATION.md for where to obtain each feeder. data/interconnection/ is
+# the exception: it is derived from a public CPUC data set and ships with this
+# archive.
+data/*
+!data/interconnection/
+cache/
+
+# OpenDSS debug-trace log, written to cwd by EPRI Ckt24's vendored
+# Regcontrol debugtrace=yes setting (data/opendss/ckt24/Substation_ckt24.dss)
+# every time it solves -- not something this project generates on purpose
+REG_subxfmr_regulator.csv
+
+# Local secrets (API keys etc.) -- never commit
+.env
+
+# LaTeX build artifacts. The compiled PDF is shipped in this archive on
+# purpose, so it is not ignored here.
+docs/papers/latex/*.aux
+docs/papers/latex/*.bbl
+docs/papers/latex/*.blg
+docs/papers/latex/*.log
+docs/papers/latex/*.out
+docs/papers/latex/*.spl
+docs/papers/latex/*.fls
+docs/papers/latex/*.fdb_latexmk
+docs/papers/latex/*.synctex.gz

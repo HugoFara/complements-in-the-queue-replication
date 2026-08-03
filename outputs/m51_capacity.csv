@@ -1,0 +1,3 @@
+feeder,description,capacity_kw,mean_reachable_kw,probe_k,probe_reachable_kw,probe_last_gain
+ckt7,EPRI Ckt7 (M42/M49),1548.398,7.618116250000001,800,6094.493,0.2010589562160543
+eulv,"IEEE European LV, exp53's rooftop PV band 3-10 kW",368.35869607935774,6.489073629562885,400,2595.629451825154,-0.002656787976592856

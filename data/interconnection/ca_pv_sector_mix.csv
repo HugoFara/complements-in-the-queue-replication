@@ -1,0 +1,8 @@
+Customer Sector,count,median,mean,share
+Residential,68404,5.94,6.99,0.968
+Commercial,1399,50.66,152.79,0.0198
+Not Available,446,16.0,23.32,0.0063
+Educational,195,153.51,210.73,0.0028
+Non-Profit,95,32.6,77.56,0.0013
+Other Government,91,172.26,251.82,0.0013
+Industrial,35,149.78,307.38,0.0005

@@ -1,0 +1,9 @@
+n_leftover,n_leftover_gen,n_leftover_load,n_addable_singles,n_same_sign_pairs,n_mixed_pairs,example_mixed_pair,family,seed,k,size_kw,placement,fixed_point_kw,verdict,dt
+20,10,10,0,0,10,pv0+ld1,ckt24,0,24,100.0,colocated,400.0,strict simultaneity,54.478187561035156
+12,6,6,0,0,6,pv0+ld1,ckt24,1,24,100.0,colocated,1200.0000000000002,strict simultaneity,51.80161499977112
+12,6,6,0,0,6,pv2+ld3,ckt24,2,24,100.0,colocated,1200.0000000000002,strict simultaneity,52.26316595077515
+20,10,10,0,0,9,pv0+ld1,ckt24,3,24,100.0,colocated,400.0,strict simultaneity,44.97722315788269
+0,0,0,0,0,0,,ckt7,0,17,100.0,colocated,1600.0,dead end at depth 2,10.830362319946289
+0,0,0,0,0,0,,ckt7,1,17,100.0,colocated,1600.0,dead end at depth 2,10.32957649230957
+0,0,0,0,0,0,,ckt7,2,17,100.0,colocated,1600.0,dead end at depth 2,7.838156223297119
+0,0,0,0,0,0,,ckt7,3,17,100.0,colocated,1600.0,dead end at depth 2,10.025059461593628
