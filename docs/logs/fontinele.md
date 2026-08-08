@@ -5,7 +5,8 @@
 *"Connection Order Matters: Path-Dependent Hosting Capacity in Distributed Generation
 Interconnection Queues."* Preprint submitted to Applied Energy, 11 April 2026.
 SSRN 6561541 (not peer-reviewed).
-**Paper:** §7.5; this file is the record behind it.
+**Paper:** §2 *Related work*, which cites [13] and points here for the comparison; this
+file is the record behind it.
 **Status:** current. The only "we beat a real competing method" result in the project —
 and it survived the ceiling audit.
 

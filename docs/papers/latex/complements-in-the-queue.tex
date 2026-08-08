@@ -278,10 +278,19 @@ an AC optimal power flow, and find an order effect \emph{within} a single
 track: individually negotiated flexible capacity is absorbed by
 early-assessed generators, leaving less network capacity for positions later
 in the queue. Their queue is entirely generation, which is this paper's
-starting point. The residual of Section~\ref{sec:three-ways} measures what a
+starting point. Closest in method is \citet{fontinele2026}, who make the
+ordering question the object itself, searching for a favourable \emph{permutation}
+of a fixed serial queue on the IEEE 33- and 69-bus feeders. A reordered serial
+queue is still serial, so a permutation search cannot reach an accept-set that
+no order produces, which is the distinction Section~\ref{sec:three-ways}
+formalizes; and their queue, like \citet{desanti2025}'s, is single-signed. The
+residual of Section~\ref{sec:three-ways} measures what a
 second, opposite-signed track can no longer recover, and it is zero by
 construction in a single-signed queue however that queue is ordered or
-curtailed. Section~\ref{sec:theory-gs} extends this literature with the
+curtailed. A matched-methodology comparison against \citeauthor{fontinele2026}'s
+two benchmark networks is recorded in the replication archive rather than
+claimed here: their project instances are not published, and both feeders are
+orders of magnitude smaller than the corpus of Section~\ref{sec:corpus}. Section~\ref{sec:theory-gs} extends this literature with the
 physical feasibility system underneath the knapsack: a mixed generation/load
 queue is not even an independence system, so the ``value'' a reform must rank
 is jointly determined rather than additive across projects.
@@ -2983,7 +2992,9 @@ Every feeder used here is third-party and publicly obtainable, and none is
 redistributed by us. The Swiss 55-node MV grid is published by EPFL's
 Distributed Electrical Systems Laboratory alongside its source publication
 \citep{yi2022}, at
-\url{https://github.com/DESL-EPFL/55nodes-Swiss-distribution-grid}; the single
+\url{https://github.com/DESL-EPFL/55nodes-Swiss-distribution-grid}. That
+repository carries no licence file; its authors confirmed on request that the
+model could be used for this work. The single
 MATLAB file there carries the line data, node locations, PV and hydro
 capacities, and the 96-interval $\times$ 8-day-type load, irradiance and hydro
 profiles used in Section~\ref{sec:time}. The SMART-DS feeder is
