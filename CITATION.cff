@@ -1,7 +1,10 @@
 cff-version: 1.2.0
 message: >-
   If you use this software or its results, please cite the paper it accompanies
-  (see preferred-citation below).
+  (see preferred-citation below). Licensing is not uniform across this archive:
+  the code is MIT and the results, derived data and laboratory notebooks are
+  CC BY 4.0, but the manuscript in docs/papers/ is under copyright with no reuse
+  licence granted. LICENSES.md sets out which terms apply where.
 title: "Complements in the Queue: replication material"
 abstract: >-
   The joint interconnection-allocation engine, the experiments behind
@@ -18,7 +21,10 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21774931
     description: Zenodo deposit of this archive
-license: MIT
+# The manuscript in docs/papers/ is excluded from both; see LICENSES.md.
+license:
+  - MIT
+  - CC-BY-4.0
 authors:
   - family-names: Farajallah
     given-names: Hugo

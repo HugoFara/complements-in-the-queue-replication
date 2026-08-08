@@ -28,8 +28,11 @@ Feeder models are third party and are not redistributed here; `REPLICATION.md`
 lists each source and the path the scripts expect it at.
 [`outputs/MANIFEST.md`](outputs/MANIFEST.md) indexes every result file.
 
-The code is MIT-licensed ([`LICENSE`](LICENSE)); the feeder models and the
-vendored LaTeX class carry their own terms.
+The code is MIT-licensed ([`LICENSE`](LICENSE)) and the results, derived data
+and laboratory notebooks are [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The manuscript in `docs/papers/` is under copyright, and the feeder models and
+vendored LaTeX class carry their own terms — [`LICENSES.md`](LICENSES.md) sets
+out all of it.
 
 This archive is deposited at
 [doi:10.5281/zenodo.21774931](https://doi.org/10.5281/zenodo.21774931); cite it

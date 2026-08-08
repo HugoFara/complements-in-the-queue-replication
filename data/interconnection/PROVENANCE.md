@@ -106,3 +106,11 @@ is made.**
 # download applications_all_6_month.zip from the portal above, then:
 uv run python experiments/73_empirical_request_distribution.py --save
 ```
+
+## Licence
+
+The three derived files in this directory are licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); attribute using
+[`../../CITATION.cff`](../../CITATION.cff). The grant covers this derived
+summary, not the underlying CPUC data set, which is public and cited above.
+See [`../../LICENSES.md`](../../LICENSES.md) for the rest of the archive.

@@ -132,7 +132,16 @@ and DOI.
 
 ## Licence
 
-The code in this archive is MIT-licensed — see [`LICENSE`](LICENSE). It does not
-cover the third-party feeder models, which carry their own terms from each
-source above, nor the vendored `elsarticle` LaTeX files in
+Three sets of terms, set out in full in [`LICENSES.md`](LICENSES.md):
+
+| What | Terms |
+|---|---|
+| Code — `src/`, `experiments/`, `test/`, `tools/` | MIT ([`LICENSE`](LICENSE)) |
+| Results, derived data and the laboratory notebooks — `outputs/`, `data/interconnection/`, `docs/logs/`, `docs/joint-allocation-scope.md` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| The manuscript — `docs/papers/` | © 2026 Hugo Farajallah, all rights reserved |
+
+The manuscript is deliberately unlicensed: it is an unrefereed preprint with no
+venue, and an open licence could not be withdrawn once granted. None of the
+above covers the third-party feeder models, which carry their own terms from
+each source in the table earlier, or the vendored `elsarticle` LaTeX files in
 `docs/papers/latex/`, which are LPPL.
