@@ -2,7 +2,10 @@
 
 **Experiments:** `26_m2_hosting_capacity_validation.py` (vs. Sandia), `29` (convex==AC),
 `30`/`41` (reinforcement), `44` (continuous gap), `67_eulv_gldf_recheck.py` (M38)
-**Paper:** §7.1–7.3 (validation + negatives) and §7.9 (the scale-effect synthesis).
+**Paper:** §4.2 *A certified feasible lower bound* and §5.3 *Certifying what survives*
+(validation), §5.9 *The regime belongs to the queue* (the scale effect). The external
+checks and negatives in sections 1–6 below predate the current manuscript's corpus and
+are not numbered results in it.
 **Status:** current. Nothing here has been overturned.
 
 These are the checks that keep the project honest but do not carry a headline. Grouped

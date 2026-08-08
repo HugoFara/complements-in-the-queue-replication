@@ -2,8 +2,10 @@
 
 **Experiments:** `57_smartds_voltage_regime.py` (M22/M26/M27),
 `58_smartds_seeded_nsga2.py` (M28), `65_smartds_gldf_recheck.py` (M36)
-**Paper:** the corpus result is a headline finding (§4.4); the *audit* of it is §7.8,
-and Appendix B keeps the strawman correction. This file is the record behind both.
+**Paper:** the corpus result is a headline row of §5.1 *The residual across the corpus*;
+the *audit* of it is §5.4 *Discharging the privacy hypothesis by enumeration*. This file
+is the record behind both. The strawman correction below was an appendix of the
+superseded draft and is not carried in the current manuscript.
 **Status:** current. **The negative survived every attempt to overturn it.** This is
 the load-bearing half of the regime map.
 

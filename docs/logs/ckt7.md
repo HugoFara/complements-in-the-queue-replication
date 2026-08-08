@@ -4,7 +4,9 @@
 (M32), `63_ckt7_swap_mutation_probe.py` (M33/M34), `68_ckt7_gldf_headline.py`
 (M39; M40 **retracted**), `70_ckt7_relinearize.py` (M42)
 **Network provenance:** `data/opendss/ckt7/PROVENANCE.md`
-**Paper:** §7.7 (the results) and §7.10 (the two lessons); this file is the record behind them.
+**Paper:** §5.1 *The residual across the corpus* and §5.5 *Exact residuals: the optimality
+gap, measured* (the results); §4.2 *A certified feasible lower bound* and §7 *Limitations*
+(the instrument lessons). This file is the record behind them.
 **Status:** current headline is the re-linearized GLDF-MILP (M42). **M32–M34 are a
 documented dead end and M40 is retracted** — both are kept in full, because how they
 went wrong is the most transferable thing on this feeder.

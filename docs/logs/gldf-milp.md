@@ -4,7 +4,8 @@
 `66_fontinele_gldf_recheck.py` (M37), `67_eulv_gldf_recheck.py` (M38),
 `68_ckt7_gldf_headline.py` (M39), `69_ckt24_relinearize.py` (M41),
 `70_ckt7_relinearize.py` (M42)
-**Paper:** §7.4 (the instrument), §7.9 (the scale effect), §7.10 (the two lessons).
+**Paper:** §4.2 *A certified feasible lower bound* (the instrument), §5.9 *The regime
+belongs to the queue* (the scale effect); the standing caveats are §7 *Limitations*.
 **Status:** current. This is the method every headline in Part II now rests on.
 
 This log is **cross-cutting**: it documents the model, how it is built, how it was

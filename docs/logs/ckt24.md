@@ -3,7 +3,9 @@
 **Experiments:** `60_ckt24_utility_scale.py` (M30), `64_ckt24_gldf_bound.py` (M35),
 `69_ckt24_relinearize.py` (M41)
 **Network provenance:** `data/opendss/ckt24/PROVENANCE.md`
-**Paper:** §7.6 (the results) and §7.4 (the method); this file is the record behind them.
+**Paper:** §4.2 *A certified feasible lower bound* (the method) and §5.1 *The residual
+across the corpus* / §5.2 *How much of the residual re-studying recovers* (the results —
+Ckt24 is the reference cell). This file is the record behind them.
 **Status:** current. The headline allocation is the re-linearized GLDF-MILP fixed
 point (M41); everything before it is retained here because the *gap* between the
 methods is itself a finding, not because those numbers are still the answer.
