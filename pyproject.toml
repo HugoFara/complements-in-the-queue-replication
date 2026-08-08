@@ -4,6 +4,18 @@ version = "1.0.0"
 description = "Replication material for 'Complements in the Queue': the joint interconnection-allocation engine, its experiments, and their outputs"
 readme = "README.md"
 requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Hugo Farajallah", email = "research@hugofara.net" },
+]
+keywords = [
+    "hosting capacity",
+    "interconnection queue",
+    "distribution networks",
+    "power flow",
+    "mixed-integer programming",
+]
 dependencies = [
     "matplotlib>=3.11.0",
     # pandapower's optional power-flow accelerator; the searches are slow without it
