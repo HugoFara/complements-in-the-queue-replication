@@ -1,4 +1,4 @@
-# Complements in the Queue: The Hosting Capacity That No Study Order Recovers
+# Complements in the Queue: What Re-Studying Recovers, and What Only a Joint Interconnection Study Can
 
 **Hugo Farajallah**
 Independent Research
