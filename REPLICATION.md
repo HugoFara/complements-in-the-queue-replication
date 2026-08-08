@@ -7,7 +7,11 @@ ORCID [0009-0001-0769-4434](https://orcid.org/0009-0001-0769-4434)
 
 This archive holds the joint-allocation engine, every experiment script, and the
 numerical outputs behind each reported result. The manuscript itself is in
-`docs/papers/latex/`, source and compiled.
+`docs/papers/latex/`, source and compiled;
+[`docs/papers/complements-in-the-queue.md`](docs/papers/complements-in-the-queue.md)
+is a Markdown reading copy generated from that source, not a second manuscript —
+edit the LaTeX and run `uv run python tools/build_paper_markdown.py` (needs
+pandoc).
 
 ## Layout
 
@@ -23,7 +27,7 @@ numerical outputs behind each reported result. The manuscript itself is in
 | `docs/logs/` | Per-feeder laboratory notebooks: how each result was obtained, what was superseded, what was retracted |
 | `docs/joint-allocation-scope.md` | The engine build log, M0–M21 |
 | `test/` | Unit tests |
-| `tools/` | `build_manifest.py`, which regenerates the output manifest |
+| `tools/` | `build_manifest.py`, which regenerates the output manifest, and `build_paper_markdown.py`, which regenerates the Markdown reading copy of the paper |
 
 The experiments carrying this paper are 91, 101, 103, 107, 109, 110 and 125–132.
 `129_outside_relief.py` is the enumeration behind Section 5.4;
