@@ -4,15 +4,19 @@ These files are the **record of how the results were obtained**: the budgets, th
 turns, the confounds caught, the milestones superseded, and the one milestone retracted.
 
 They exist because the manuscript had grown into a chronological log of them. It states
-**what is true and why it matters**; these logs state **how we found out**. Where the two
-ever disagree, **the log is the record and the paper is wrong** — the logs are written
-against the CSVs in `outputs/`.
+**what is true and why it matters**; these logs state **how we found out**.
+
+Where the two disagree, neither wins by default. Several of these logs predate the
+current manuscript and were written against its superseded "regime map" predecessor, so
+a disagreement is as likely to be a stale log as a wrong paper. What settles it is the
+CSV in `outputs/` that both are quoting: these logs are written against those files, and
+[`outputs/MANIFEST.md`](../../outputs/MANIFEST.md) records which script wrote each one.
 
 ## Where things live
 
 | Document | Purpose |
 |---|---|
-| `docs/papers/complements-in-the-queue.md` | The paper: claims, and the numbers that support them |
+| `docs/papers/latex/` | The manuscript: claims, and the numbers that support them. Source and PDF; the Markdown copy beside it is generated from these and the PDF wins on any disagreement |
 | `docs/logs/` (here) | How each result was obtained; what was superseded or retracted |
 | `docs/joint-allocation-scope.md` | The engine build log, M0–M21 (before any of this) |
 | `outputs/*.csv` | The data every number here is quoted from |
@@ -31,6 +35,7 @@ internal documents, not part of this archive.
 | [smartds.md](smartds.md) | **The negative half of the regime map**, and the three attempts to kill it | M22, M26–M28, M36 |
 | [fontinele.md](fontinele.md) | **Head-to-head vs. the closest prior art** on their own two benchmark networks | M29, M37 |
 | [small-network-checks.md](small-network-checks.md) | External validation (Sandia, ENWL), the honest negatives, the EULV re-check | M38 |
+| [arrival-order.md](arrival-order.md) | **The arrival-order lottery** — the paper's Appendix A, and the headline that did not survive the real request distribution | M43, M44, M46 |
 
 ## Reading order, if you are new to this
 
@@ -102,9 +107,9 @@ a dead thermal constraint out of sight for five milestones.
   comparisons are distributions (≥20 seeds); the corpus sweep, the fairness fronts and
   the engine extensions are single-seed — reproducible, but not characterized as
   mean-and-spread.
-- **The domain-correctness flags in the paper's §8 apply to every number here.** They are
-  load-bearing and *not* independently verified by the author; they need an
+- **The domain-correctness flags in §7 *Limitations* apply to every number here.** They
+  are load-bearing and *not* independently verified by the author; they need an
   electrical-engineering co-author before any journal submission.
 - **"mpu"** = milli-per-unit (1 mpu = 0.001 pu), our own shorthand for voltage error, not
-  standard EE usage. It is used throughout these logs; it should be converted before any
-  external submission.
+  standard EE usage. It appears in these logs only — the manuscript states voltage in
+  per-unit throughout.
