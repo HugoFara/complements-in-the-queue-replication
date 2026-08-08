@@ -87,11 +87,16 @@ that touches a feeder will run.
 
 | Feeder | Source | Expected location |
 |---|---|---|
-| Swiss 55-node MV | EPFL DESL, <https://github.com/DESL-EPFL/55nodes-Swiss-distribution-grid> | pass the `.mat` file with `--mat` |
+| Swiss 55-node MV | EPFL DESL, <https://github.com/DESL-EPFL/55nodes-Swiss-distribution-grid> (see the licensing note below) | pass the `.mat` file with `--mat` |
 | SMART-DS `uhs2_1247--udt10746` | `s3://oedi-data-lake/SMART-DS/v1.0/2018/GSO/urban-suburban/scenarios/base_timeseries/opendss_no_loadshapes/uhs2_1247/` (anonymous, `--no-sign-request`) | `cache/smartds/` |
 | EPRI Ckt7, Ckt24 | EPRI "Green Circuits" distribution feeder set | `data/opendss/ckt7/Master_ckt7.dss`, `data/opendss/ckt24/master_ckt24.dss` |
 | ENWL LV networks | Electricity North West, Low Voltage Network Solutions; models and the companion `LCTProfiles` archive are separate downloads | `cache/enwl/`, `cache/enwl_full/<network>/<feeder>/` |
 | IEEE European LV | dss-extensions `electricdss-tst` LVTestCase | `data/opendss/eulv/` |
+
+**The Swiss 55-node repository carries no licence file.** Its authors confirmed on
+request that the model could be used for this work. That confirmation covers this
+work and is not a licence: if you reuse the model, ask them yourself rather than
+relying on this note.
 
 One non-feeder input **does** ship, in `data/interconnection/`: the empirical
 request-size distribution behind Appendix A and experiments 71/73, derived from
