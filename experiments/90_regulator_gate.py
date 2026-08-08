@@ -33,13 +33,17 @@ Ckt24 regulator's own parameters (vreg=123 band=3 ptratio=166 ctprim=2000 R=7 ->
   1. with the controller idle, runpp reproduces the frozen baseline BIT-FOR-BIT (else the
      un-bake silently changed every result -- the double-application trap);
   2. run_control at zero PV lands at tap 2 with the LV terminal at 1.0457 pu, reproducing
-     OpenDSS's own solved operating point (opendssdirect ground truth; see
-     an internal handover note).
-The controller is pandapower's, on an unreleased upstream build (this file runs with that
-source on PYTHONPATH; the released 3.4.0 in .venv has neither the tap import nor the LDC
-controller).
+     OpenDSS's own solved operating point (opendssdirect is the ground truth here).
 
-Run:  PYTHONPATH=../pandapower .venv/bin/python experiments/90_regulator_gate.py --save
+REQUIRES A PANDAPOWER BUILD THIS ARCHIVE DOES NOT PIN. Two capabilities are needed that
+the released 3.4.0 in .venv has neither of: import of an OpenDSS RegControl's tap state,
+and a line-drop-compensation tap controller. Point PYTHONPATH at a source tree providing
+both. Without it this file will not import, which is why it is not in the reproduction
+path for any result in the paper -- it is a gate check on whether a live substation LTC
+moves the Ckt24 headline, and the answer it records is no.
+
+Run:  PYTHONPATH=<pandapower source with LDC tap control> .venv/bin/python \
+          experiments/90_regulator_gate.py --save
 """
 from __future__ import annotations
 

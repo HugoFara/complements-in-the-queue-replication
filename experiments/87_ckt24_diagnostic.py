@@ -26,7 +26,8 @@ over, or does it freeze the tap?**
     the regulator's RESPONSE: the tap cannot move, so as PV export raises voltage the model
     never taps DOWN to absorb it. That UNDERSTATES PV hosting capacity, making every Ckt24
     headline a conservative floor -- the opposite error from Ckt7's, whose 1.05 was a free
-    choice that INFLATED its story. Upstream fix: an internal handover note.
+    choice that INFLATED its story. Lifting it needs a pandapower build that imports the
+    RegControl's tap state; experiments/90_regulator_gate.py is the gate check.
 
 Reports, in order:
   D1  the ext_grid setpoint; the argmax-voltage bus; vmax with and WITHOUT the slack.

@@ -19,7 +19,8 @@ M59 (exp87) established three things first, and two of them are corrections to U
      regulator's RESPONSE: the tap is pinned at the no-PV position, so as PV export raises
      voltage the model never taps DOWN to absorb it, where a real LTC would. That
      UNDERSTATES PV hosting capacity, so every Ckt24 headline is a CONSERVATIVE floor.
-     (Ckt7's error ran the other way.) See an internal handover note.
+     (Ckt7's error ran the other way.) See experiments/90_regulator_gate.py, which tests
+     whether a live LTC moves the headline.
 
   3. THE FEASIBLE SETPOINT WINDOW IS [1.03, 1.05], wider than Ckt7's [1.04, 1.05]:
 

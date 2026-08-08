@@ -40,8 +40,9 @@ Setpoints 1.05 (EPRI's pin, 0.0012 pu headroom) and 1.04 (the honest one, real h
 number to quote is 1.04, as in M58.
 
 Usage:
-  PYTHONPATH=../pandapower .venv/bin/python experiments/91_sequential_segregation.py --save
-  (plain .venv works too; the LDC branch is not needed here -- Ckt7 has no regulator.)
+  .venv/bin/python experiments/91_sequential_segregation.py --save
+  (the pinned pandapower is sufficient -- Ckt7 has no regulator, so nothing here needs the
+  tap-control capability experiments/90_regulator_gate.py asks for.)
 """
 from __future__ import annotations
 
