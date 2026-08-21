@@ -15,7 +15,7 @@ abstract: >-
   rather than a relaxation.
 type: software
 version: 1.0.0
-date-released: "2026-08-03"
+date-released: "2026-08-21"
 doi: 10.5281/zenodo.21774931
 identifiers:
   - type: doi
