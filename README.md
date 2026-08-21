@@ -4,7 +4,7 @@ Code, experiments and numerical outputs for:
 
 > **Complements in the Queue: What Re-Studying Recovers, and What Only a Joint
 > Interconnection Study Can**
-> Hugo Farajallah, Independent Research — <research@hugofara.net>
+> Hugo Farajallah, Independent Research
 > ORCID [0009-0001-0769-4434](https://orcid.org/0009-0001-0769-4434)
 
 The paper defines the **residual** — `JOINT − max(sequential study orders)` — as
