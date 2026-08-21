@@ -55,6 +55,26 @@ without re-running the searches.
 
 `uv run pytest` runs the unit tests; all 159 pass.
 
+## One script does not run against the pinned dependencies
+
+`experiments/90_regulator_gate.py` will not import under the pinned pandapower. It
+needs a build that does two things the released version does not: import an OpenDSS
+`RegControl`'s tap state, and apply line-drop-compensation tap control. Point
+`PYTHONPATH` at a source tree providing both, or skip the script.
+
+Its result ships regardless, in `outputs/m62_regulator_gate.csv`, and §5.7 of the
+paper quotes it: un-freezing Ckt24's substation tap and attaching its real LTC
+leaves the regulator inert at every certified optimum — `tap_moved` is false in all
+six runs, `live_gain_pct` zero in each. **That result is recorded here but cannot be
+regenerated from this archive**, which is the one place this material falls short of
+its own standard.
+
+No other result depends on it. The gate exists only to decide whether building a
+full live-regulator pipeline was worth the work at 6,058-bus scale; the answer was
+no, and every Ckt24 figure in the paper is the frozen-tap result, disclosed
+throughout as a conservative floor. Scripts 87 and 88, which produce those figures,
+run against the pin.
+
 ## Which script wrote which result
 
 [`outputs/MANIFEST.md`](outputs/MANIFEST.md) indexes all 229 result files: what
