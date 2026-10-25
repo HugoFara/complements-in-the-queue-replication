@@ -55,6 +55,12 @@ without re-running the searches.
 
 `uv run pytest` runs the unit tests; all 159 pass.
 
+Since the 1.0.0 archive, three pins have moved, for security advisories: pillow
+12.2.0 → 13.0.0, urllib3 2.7.0 → 2.8.0 and certifi 2026.7.22 → 2026.10.23. None
+computes anything: pillow writes the figures' image files, and urllib3 and certifi
+serve `requests` in `experiments/27`. Every numerical dependency keeps its 1.0.0
+pin. The archived lock is the one in the Zenodo record.
+
 ## One script does not run against the pinned dependencies
 
 `experiments/90_regulator_gate.py` will not import under the pinned pandapower. It
